@@ -1,0 +1,244 @@
+\hypertarget{classConference}{}\section{Conference Class Reference}
+\label{classConference}\index{Conference@{Conference}}
+
+
+The \hyperlink{classConference}{Conference} Class -\/ Derived Class from the Super \hyperlink{classEvent}{Event} Class.  
+
+
+
+
+{\ttfamily \#include $<$Conference.\+h$>$}
+
+Inheritance diagram for Conference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classConference}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConference_a433a85d640693398c2c96a2a655fc6f4}{Conference} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classConference_a23b9a4644d1608f8f33400a6e41b32df}{Conference} (std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_a6cec387dca85f0a0e8419cfc94eb320e}{event\+\_\+request}, std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_ad35e04c759fdbfad75aed0b6e2eef63c}{event\+\_\+organizers}, std\+::string \hyperlink{classEvent_a9a93c9d38211f84cd6e347690e177f11}{date}, std\+::string \hyperlink{classEvent_a3d1f28a3bde9ab718d5b0003f8ab5129}{local}, std\+::string \hyperlink{classEvent_aa9cc4378d5cecaadc8e6de92b313e6f8}{theme}, \hyperlink{classAssociation}{Association} $\ast$\hyperlink{classEvent_a3c8694833e50dbd2e37943eff1f5c9b1}{association}, int \hyperlink{classConference_ab3acc9b9aec3a4dbcfd18d1611337ecb}{estimative})
+\begin{DoxyCompactList}\small\item\em Full \hyperlink{classConference}{Conference} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classConference_ac86f5bff0837b92bccad09241a80137c}{Conference} (std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_a6cec387dca85f0a0e8419cfc94eb320e}{event\+\_\+request}, std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_ad35e04c759fdbfad75aed0b6e2eef63c}{event\+\_\+organizers}, std\+::string \hyperlink{classEvent_a9a93c9d38211f84cd6e347690e177f11}{date}, std\+::string \hyperlink{classEvent_a3d1f28a3bde9ab718d5b0003f8ab5129}{local}, std\+::string \hyperlink{classEvent_aa9cc4378d5cecaadc8e6de92b313e6f8}{theme}, \hyperlink{classAssociation}{Association} $\ast$\hyperlink{classEvent_a3c8694833e50dbd2e37943eff1f5c9b1}{association}, int \hyperlink{classConference_ab3acc9b9aec3a4dbcfd18d1611337ecb}{estimative}, long double money)
+\begin{DoxyCompactList}\small\item\em Full \hyperlink{classConference}{Conference} Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classConference_aad7fc5f411279abc70d4ff3c30d2bdd8}{$\sim$\+Conference} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classConference}{Conference} Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classConference_a9d96f80eb37bdbf57bf318c8bd484e88}{get\+Estimative} () const
+\begin{DoxyCompactList}\small\item\em returns the number of people estimated to go to the conference \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classConference_ad1cf07b29a4c4cc36483603ef9536186}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em returns the type of the event (\hyperlink{classConference}{Conference}) \end{DoxyCompactList}\item 
+long double \hyperlink{classConference_a6ca3f0f7b2714881dbc108ea7f08646f}{get\+Support} () const
+\begin{DoxyCompactList}\small\item\em returns the value of the monetary support given by the association \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$ $>$ \hyperlink{classConference_aae9e92d48205a80fa42e94564e3568c5}{get\+Trainers} () const
+\begin{DoxyCompactList}\small\item\em returns the trainers who will attend the conference \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classConference_a7a2f7b38c728f487d82356d3c671ef88}{show\+Info} () const
+\begin{DoxyCompactList}\small\item\em returns all the information about the conference \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classConference_af456d5097dc28808360f0d0fba2160c6}{type} = \char`\"{}Conference\char`\"{}
+\begin{DoxyCompactList}\small\item\em The type of the event. \end{DoxyCompactList}\item 
+int \hyperlink{classConference_ab3acc9b9aec3a4dbcfd18d1611337ecb}{estimative}
+\begin{DoxyCompactList}\small\item\em The number of people estimated to go to the conference. \end{DoxyCompactList}\item 
+long double \hyperlink{classConference_a800a31bff9c492bc417cf8cecf450195}{given\+\_\+support}
+\begin{DoxyCompactList}\small\item\em The value of the monetary support given by the association. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classConference}{Conference} Class -\/ Derived Class from the Super \hyperlink{classEvent}{Event} Class. 
+
+A conference is a special type of event. This one has a estimative of people who will attend to the conference. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConference_a433a85d640693398c2c96a2a655fc6f4}\label{classConference_a433a85d640693398c2c96a2a655fc6f4}} 
+\index{Conference@{Conference}!Conference@{Conference}}
+\index{Conference@{Conference}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{Conference()}{Conference()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Conference\+::\+Conference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{classConference_a23b9a4644d1608f8f33400a6e41b32df}\label{classConference_a23b9a4644d1608f8f33400a6e41b32df}} 
+\index{Conference@{Conference}!Conference@{Conference}}
+\index{Conference@{Conference}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{Conference()}{Conference()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Conference\+::\+Conference (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+request,  }\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+organizers,  }\item[{std\+::string}]{date,  }\item[{std\+::string}]{local,  }\item[{std\+::string}]{theme,  }\item[{\hyperlink{classAssociation}{Association} $\ast$}]{association,  }\item[{int}]{estimative }\end{DoxyParamCaption})}
+
+
+
+Full \hyperlink{classConference}{Conference} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+request} & -\/ The associates that requested the conference (up to 3) \\
+\hline
+{\em event\+\_\+organizers} & -\/ The associates that requested the conference (up to 3) and the ones who will help organize \\
+\hline
+{\em date} & -\/ The date of the conference \\
+\hline
+{\em local} & -\/ The local of the conference \\
+\hline
+{\em theme} & -\/ The theme of the conference \\
+\hline
+{\em association} & -\/ The \hyperlink{classAssociation}{Association} that promotes the conference \\
+\hline
+{\em estimative} & -\/ The number of people estimated to go to the conference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classConference_ac86f5bff0837b92bccad09241a80137c}\label{classConference_ac86f5bff0837b92bccad09241a80137c}} 
+\index{Conference@{Conference}!Conference@{Conference}}
+\index{Conference@{Conference}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{Conference()}{Conference()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Conference\+::\+Conference (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+request,  }\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+organizers,  }\item[{std\+::string}]{date,  }\item[{std\+::string}]{local,  }\item[{std\+::string}]{theme,  }\item[{\hyperlink{classAssociation}{Association} $\ast$}]{association,  }\item[{int}]{estimative,  }\item[{long double}]{money }\end{DoxyParamCaption})}
+
+
+
+Full \hyperlink{classConference}{Conference} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+request} & -\/ The associates that requested the conference (up to 3) \\
+\hline
+{\em event\+\_\+organizers} & -\/ The associates that requested the conference (up to 3) and the ones who will help organize \\
+\hline
+{\em date} & -\/ The date of the conference \\
+\hline
+{\em local} & -\/ The local of the conference \\
+\hline
+{\em theme} & -\/ The theme of the conference \\
+\hline
+{\em association} & -\/ The \hyperlink{classAssociation}{Association} that promotes the conference \\
+\hline
+{\em estimative} & -\/ The number of people estimated to go to the conference \\
+\hline
+{\em money} & -\/ The amount the \hyperlink{classAssociation}{Association} gives to promote de event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classConference_aad7fc5f411279abc70d4ff3c30d2bdd8}\label{classConference_aad7fc5f411279abc70d4ff3c30d2bdd8}} 
+\index{Conference@{Conference}!````~Conference@{$\sim$\+Conference}}
+\index{````~Conference@{$\sim$\+Conference}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{$\sim$\+Conference()}{~Conference()}}
+{\footnotesize\ttfamily Conference\+::$\sim$\+Conference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default \hyperlink{classConference}{Conference} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classConference_a9d96f80eb37bdbf57bf318c8bd484e88}\label{classConference_a9d96f80eb37bdbf57bf318c8bd484e88}} 
+\index{Conference@{Conference}!get\+Estimative@{get\+Estimative}}
+\index{get\+Estimative@{get\+Estimative}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{get\+Estimative()}{getEstimative()}}
+{\footnotesize\ttfamily int Conference\+::get\+Estimative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the number of people estimated to go to the conference 
+
+
+
+Implements \hyperlink{classEvent_a18ac55c239f648fc0ad5687c426f2a8f}{Event}.
+
+\mbox{\Hypertarget{classConference_a6ca3f0f7b2714881dbc108ea7f08646f}\label{classConference_a6ca3f0f7b2714881dbc108ea7f08646f}} 
+\index{Conference@{Conference}!get\+Support@{get\+Support}}
+\index{get\+Support@{get\+Support}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{get\+Support()}{getSupport()}}
+{\footnotesize\ttfamily long double Conference\+::get\+Support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the value of the monetary support given by the association 
+
+
+
+Implements \hyperlink{classEvent_a9170bfcbd9b00015dafc5d5cc69a2cfe}{Event}.
+
+\mbox{\Hypertarget{classConference_aae9e92d48205a80fa42e94564e3568c5}\label{classConference_aae9e92d48205a80fa42e94564e3568c5}} 
+\index{Conference@{Conference}!get\+Trainers@{get\+Trainers}}
+\index{get\+Trainers@{get\+Trainers}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{get\+Trainers()}{getTrainers()}}
+{\footnotesize\ttfamily list$<$ \hyperlink{classTrainer}{Trainer} $\ast$ $>$ Conference\+::get\+Trainers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the trainers who will attend the conference 
+
+
+
+Implements \hyperlink{classEvent_a11aad3e5a7ee85bc61b6811d050c5d70}{Event}.
+
+\mbox{\Hypertarget{classConference_ad1cf07b29a4c4cc36483603ef9536186}\label{classConference_ad1cf07b29a4c4cc36483603ef9536186}} 
+\index{Conference@{Conference}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Conference\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the type of the event (\hyperlink{classConference}{Conference}) 
+
+
+
+Implements \hyperlink{classEvent_a224dbd9a9aee5937ba0c8ea1a056af1f}{Event}.
+
+\mbox{\Hypertarget{classConference_a7a2f7b38c728f487d82356d3c671ef88}\label{classConference_a7a2f7b38c728f487d82356d3c671ef88}} 
+\index{Conference@{Conference}!show\+Info@{show\+Info}}
+\index{show\+Info@{show\+Info}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{show\+Info()}{showInfo()}}
+{\footnotesize\ttfamily string Conference\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns all the information about the conference 
+
+
+
+Implements \hyperlink{classEvent_aaa38f467e933c57190d43351bdb817be}{Event}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classConference_ab3acc9b9aec3a4dbcfd18d1611337ecb}\label{classConference_ab3acc9b9aec3a4dbcfd18d1611337ecb}} 
+\index{Conference@{Conference}!estimative@{estimative}}
+\index{estimative@{estimative}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{estimative}{estimative}}
+{\footnotesize\ttfamily int Conference\+::estimative\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of people estimated to go to the conference. 
+
+\mbox{\Hypertarget{classConference_a800a31bff9c492bc417cf8cecf450195}\label{classConference_a800a31bff9c492bc417cf8cecf450195}} 
+\index{Conference@{Conference}!given\+\_\+support@{given\+\_\+support}}
+\index{given\+\_\+support@{given\+\_\+support}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{given\+\_\+support}{given\_support}}
+{\footnotesize\ttfamily long double Conference\+::given\+\_\+support\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The value of the monetary support given by the association. 
+
+\mbox{\Hypertarget{classConference_af456d5097dc28808360f0d0fba2160c6}\label{classConference_af456d5097dc28808360f0d0fba2160c6}} 
+\index{Conference@{Conference}!type@{type}}
+\index{type@{type}!Conference@{Conference}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::string Conference\+::type = \char`\"{}Conference\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The type of the event. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Conference_8h}{Conference.\+h}\item 
+\hyperlink{Conference_8cpp}{Conference.\+cpp}\end{DoxyCompactItemize}

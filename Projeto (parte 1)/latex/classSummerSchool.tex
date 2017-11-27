@@ -1,0 +1,240 @@
+\hypertarget{classSummerSchool}{}\section{Summer\+School Class Reference}
+\label{classSummerSchool}\index{Summer\+School@{Summer\+School}}
+
+
+The \hyperlink{classSummerSchool}{Summer\+School} Class -\/ Derived Class from the Super \hyperlink{classEvent}{Event} Class.  
+
+
+
+
+{\ttfamily \#include $<$Summer\+School.\+h$>$}
+
+Inheritance diagram for Summer\+School\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSummerSchool}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSummerSchool_af66df445834a36ccb6e67d5503c1b776}{Summer\+School} ()
+\item 
+\hyperlink{classSummerSchool_a4fa81719de6c453629fd522530cbb911}{Summer\+School} (std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_a6cec387dca85f0a0e8419cfc94eb320e}{event\+\_\+request}, std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_ad35e04c759fdbfad75aed0b6e2eef63c}{event\+\_\+organizers}, std\+::string \hyperlink{classEvent_a9a93c9d38211f84cd6e347690e177f11}{date}, std\+::string \hyperlink{classEvent_a3d1f28a3bde9ab718d5b0003f8ab5129}{local}, std\+::string \hyperlink{classEvent_aa9cc4378d5cecaadc8e6de92b313e6f8}{theme}, \hyperlink{classAssociation}{Association} $\ast$\hyperlink{classEvent_a3c8694833e50dbd2e37943eff1f5c9b1}{association}, std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$$>$ \hyperlink{classSummerSchool_a3208a977c13ce8d7415b179a040efae3}{trainers})
+\begin{DoxyCompactList}\small\item\em Full \hyperlink{classSummerSchool}{Summer\+School} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classSummerSchool_a556427f09423c48d5b81c77d99f5e73f}{Summer\+School} (std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_a6cec387dca85f0a0e8419cfc94eb320e}{event\+\_\+request}, std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$ \hyperlink{classEvent_ad35e04c759fdbfad75aed0b6e2eef63c}{event\+\_\+organizers}, std\+::string \hyperlink{classEvent_a9a93c9d38211f84cd6e347690e177f11}{date}, std\+::string \hyperlink{classEvent_a3d1f28a3bde9ab718d5b0003f8ab5129}{local}, std\+::string \hyperlink{classEvent_aa9cc4378d5cecaadc8e6de92b313e6f8}{theme}, \hyperlink{classAssociation}{Association} $\ast$\hyperlink{classEvent_a3c8694833e50dbd2e37943eff1f5c9b1}{association}, std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$$>$ \hyperlink{classSummerSchool_a3208a977c13ce8d7415b179a040efae3}{trainers}, long double \hyperlink{classSummerSchool_a7e6899945d6a486e9d1d1f581236630b}{given\+\_\+support})
+\begin{DoxyCompactList}\small\item\em Full \hyperlink{classSummerSchool}{Summer\+School} Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classSummerSchool_ad3c3df760cfaee1042fe5290fa487b2c}{$\sim$\+Summer\+School} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classSummerSchool}{Summer\+School} Destructor. \end{DoxyCompactList}\item 
+long double \hyperlink{classSummerSchool_a86f34a2f39dcd33171e77c386165219c}{get\+Support} () const
+\begin{DoxyCompactList}\small\item\em Returns the money the \hyperlink{classAssociation}{Association} gave to support the event. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSummerSchool_a2ba547411ca8f161c2c579f9f55f913e}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the type of the event. \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$ $>$ \hyperlink{classSummerSchool_aba18410ee9fbafd26858232104b5b39f}{get\+Trainers} () const
+\begin{DoxyCompactList}\small\item\em Returns all the trainers who will lecture during the summer\+School. \end{DoxyCompactList}\item 
+int \hyperlink{classSummerSchool_a019b9e38108b7dd31cd93cab285d0d00}{get\+Estimative} () const
+\begin{DoxyCompactList}\small\item\em Returns the estimative of people attending the summer\+School. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSummerSchool_a61ac7307840f787e3de639d431248e26}{show\+Info} () const
+\begin{DoxyCompactList}\small\item\em Returns (in a string) all the information about a summer\+School. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classSummerSchool_a4bce94c462b492844cacce921427d212}{type} = \char`\"{}Summer\+School\char`\"{}
+\begin{DoxyCompactList}\small\item\em The type of the \hyperlink{classEvent}{Event} (\hyperlink{classSummerSchool}{Summer\+School}) \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$ $>$ \hyperlink{classSummerSchool_a3208a977c13ce8d7415b179a040efae3}{trainers}
+\begin{DoxyCompactList}\small\item\em All trainers in the \hyperlink{classSummerSchool}{Summer\+School}. \end{DoxyCompactList}\item 
+long double \hyperlink{classSummerSchool_a7e6899945d6a486e9d1d1f581236630b}{given\+\_\+support}
+\begin{DoxyCompactList}\small\item\em The value of the monetary support given by the association. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSummerSchool}{Summer\+School} Class -\/ Derived Class from the Super \hyperlink{classEvent}{Event} Class. 
+
+A summer\+School is a special type of event. This one has some trainers who will give lectures during the event 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSummerSchool_af66df445834a36ccb6e67d5503c1b776}\label{classSummerSchool_af66df445834a36ccb6e67d5503c1b776}} 
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{Summer\+School()}{SummerSchool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Summer\+School\+::\+Summer\+School (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSummerSchool_a4fa81719de6c453629fd522530cbb911}\label{classSummerSchool_a4fa81719de6c453629fd522530cbb911}} 
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{Summer\+School()}{SummerSchool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Summer\+School\+::\+Summer\+School (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+request,  }\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+organizers,  }\item[{std\+::string}]{date,  }\item[{std\+::string}]{local,  }\item[{std\+::string}]{theme,  }\item[{\hyperlink{classAssociation}{Association} $\ast$}]{association,  }\item[{std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$$>$}]{trainers }\end{DoxyParamCaption})}
+
+
+
+Full \hyperlink{classSummerSchool}{Summer\+School} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+request} & -\/ The associates that requested the summerschool (up to 3) \\
+\hline
+{\em event\+\_\+organizers} & -\/ The associates that requested the summerschool (up to 3) and the ones who will help organize \\
+\hline
+{\em date} & -\/ The date of the summerschool \\
+\hline
+{\em local} & -\/ The local of the summerschool \\
+\hline
+{\em theme} & -\/ The theme of the summerschool \\
+\hline
+{\em association} & -\/ The \hyperlink{classAssociation}{Association} that promotes the summerschool \\
+\hline
+{\em trainers} & -\/ A list of all the trainers that will lecture during the summerschool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSummerSchool_a556427f09423c48d5b81c77d99f5e73f}\label{classSummerSchool_a556427f09423c48d5b81c77d99f5e73f}} 
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\index{Summer\+School@{Summer\+School}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{Summer\+School()}{SummerSchool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Summer\+School\+::\+Summer\+School (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+request,  }\item[{std\+::vector$<$ \hyperlink{classAssociate}{Associate} $\ast$$>$}]{event\+\_\+organizers,  }\item[{std\+::string}]{date,  }\item[{std\+::string}]{local,  }\item[{std\+::string}]{theme,  }\item[{\hyperlink{classAssociation}{Association} $\ast$}]{association,  }\item[{std\+::list$<$ \hyperlink{classTrainer}{Trainer} $\ast$$>$}]{trainers,  }\item[{long double}]{given\+\_\+support }\end{DoxyParamCaption})}
+
+
+
+Full \hyperlink{classSummerSchool}{Summer\+School} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+request} & -\/ The associates that requested the summerschool (up to 3) \\
+\hline
+{\em event\+\_\+organizers} & -\/ The associates that requested the summerschool (up to 3) and the ones who will help organize \\
+\hline
+{\em date} & -\/ The date of the summerschool \\
+\hline
+{\em local} & -\/ The local of the summerschool \\
+\hline
+{\em theme} & -\/ The theme of the summerschool \\
+\hline
+{\em association} & -\/ The \hyperlink{classAssociation}{Association} that promotes the summerschool \\
+\hline
+{\em trainers} & -\/ A list of all the trainers that will lecture during the summerschool \\
+\hline
+{\em give\+\_\+support} & -\/ The amount the \hyperlink{classAssociation}{Association} gives to promote de event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSummerSchool_ad3c3df760cfaee1042fe5290fa487b2c}\label{classSummerSchool_ad3c3df760cfaee1042fe5290fa487b2c}} 
+\index{Summer\+School@{Summer\+School}!````~Summer\+School@{$\sim$\+Summer\+School}}
+\index{````~Summer\+School@{$\sim$\+Summer\+School}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{$\sim$\+Summer\+School()}{~SummerSchool()}}
+{\footnotesize\ttfamily Summer\+School\+::$\sim$\+Summer\+School (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default \hyperlink{classSummerSchool}{Summer\+School} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSummerSchool_a019b9e38108b7dd31cd93cab285d0d00}\label{classSummerSchool_a019b9e38108b7dd31cd93cab285d0d00}} 
+\index{Summer\+School@{Summer\+School}!get\+Estimative@{get\+Estimative}}
+\index{get\+Estimative@{get\+Estimative}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{get\+Estimative()}{getEstimative()}}
+{\footnotesize\ttfamily int Summer\+School\+::get\+Estimative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the estimative of people attending the summer\+School. 
+
+
+
+Implements \hyperlink{classEvent_a18ac55c239f648fc0ad5687c426f2a8f}{Event}.
+
+\mbox{\Hypertarget{classSummerSchool_a86f34a2f39dcd33171e77c386165219c}\label{classSummerSchool_a86f34a2f39dcd33171e77c386165219c}} 
+\index{Summer\+School@{Summer\+School}!get\+Support@{get\+Support}}
+\index{get\+Support@{get\+Support}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{get\+Support()}{getSupport()}}
+{\footnotesize\ttfamily long double Summer\+School\+::get\+Support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the money the \hyperlink{classAssociation}{Association} gave to support the event. 
+
+
+
+Implements \hyperlink{classEvent_a9170bfcbd9b00015dafc5d5cc69a2cfe}{Event}.
+
+\mbox{\Hypertarget{classSummerSchool_aba18410ee9fbafd26858232104b5b39f}\label{classSummerSchool_aba18410ee9fbafd26858232104b5b39f}} 
+\index{Summer\+School@{Summer\+School}!get\+Trainers@{get\+Trainers}}
+\index{get\+Trainers@{get\+Trainers}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{get\+Trainers()}{getTrainers()}}
+{\footnotesize\ttfamily list$<$ \hyperlink{classTrainer}{Trainer} $\ast$ $>$ Summer\+School\+::get\+Trainers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns all the trainers who will lecture during the summer\+School. 
+
+
+
+Implements \hyperlink{classEvent_a11aad3e5a7ee85bc61b6811d050c5d70}{Event}.
+
+\mbox{\Hypertarget{classSummerSchool_a2ba547411ca8f161c2c579f9f55f913e}\label{classSummerSchool_a2ba547411ca8f161c2c579f9f55f913e}} 
+\index{Summer\+School@{Summer\+School}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Summer\+School\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the type of the event. 
+
+
+
+Implements \hyperlink{classEvent_a224dbd9a9aee5937ba0c8ea1a056af1f}{Event}.
+
+\mbox{\Hypertarget{classSummerSchool_a61ac7307840f787e3de639d431248e26}\label{classSummerSchool_a61ac7307840f787e3de639d431248e26}} 
+\index{Summer\+School@{Summer\+School}!show\+Info@{show\+Info}}
+\index{show\+Info@{show\+Info}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{show\+Info()}{showInfo()}}
+{\footnotesize\ttfamily string Summer\+School\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns (in a string) all the information about a summer\+School. 
+
+
+
+Implements \hyperlink{classEvent_aaa38f467e933c57190d43351bdb817be}{Event}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSummerSchool_a7e6899945d6a486e9d1d1f581236630b}\label{classSummerSchool_a7e6899945d6a486e9d1d1f581236630b}} 
+\index{Summer\+School@{Summer\+School}!given\+\_\+support@{given\+\_\+support}}
+\index{given\+\_\+support@{given\+\_\+support}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{given\+\_\+support}{given\_support}}
+{\footnotesize\ttfamily long double Summer\+School\+::given\+\_\+support\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The value of the monetary support given by the association. 
+
+\mbox{\Hypertarget{classSummerSchool_a3208a977c13ce8d7415b179a040efae3}\label{classSummerSchool_a3208a977c13ce8d7415b179a040efae3}} 
+\index{Summer\+School@{Summer\+School}!trainers@{trainers}}
+\index{trainers@{trainers}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{trainers}{trainers}}
+{\footnotesize\ttfamily std\+::list$<$\hyperlink{classTrainer}{Trainer} $\ast$$>$ Summer\+School\+::trainers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+All trainers in the \hyperlink{classSummerSchool}{Summer\+School}. 
+
+\mbox{\Hypertarget{classSummerSchool_a4bce94c462b492844cacce921427d212}\label{classSummerSchool_a4bce94c462b492844cacce921427d212}} 
+\index{Summer\+School@{Summer\+School}!type@{type}}
+\index{type@{type}!Summer\+School@{Summer\+School}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::string Summer\+School\+::type = \char`\"{}Summer\+School\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The type of the \hyperlink{classEvent}{Event} (\hyperlink{classSummerSchool}{Summer\+School}) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{SummerSchool_8h}{Summer\+School.\+h}\item 
+\hyperlink{SummerSchool_8cpp}{Summer\+School.\+cpp}\end{DoxyCompactItemize}

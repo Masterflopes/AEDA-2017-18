@@ -1,0 +1,135 @@
+\hypertarget{Association_8h}{}\section{Association.\+h File Reference}
+\label{Association_8h}\index{Association.\+h@{Association.\+h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNoSuchID}{No\+Such\+ID}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classNoSuchID}{No\+Such\+ID} Class. \end{DoxyCompactList}\item 
+class \hyperlink{classNoSuchDate}{No\+Such\+Date}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classNoSuchDate}{No\+Such\+Date} Class. \end{DoxyCompactList}\item 
+class \hyperlink{classAssociation}{Association}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classAssociation}{Association} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{Association_8h_a7212dfc6bb07893e23fa977f18309ded}{cmp\+ID} (\hyperlink{classAssociate}{Associate} $\ast$rhs, \hyperlink{classAssociate}{Associate} $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares the ID of 2 different associates \end{DoxyCompactList}\item 
+bool \hyperlink{Association_8h_acd1fd4877ff6b5bf584be877a13d0588}{cmp\+Money} (\hyperlink{classAssociate}{Associate} $\ast$rhs, \hyperlink{classAssociate}{Associate} $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares the money of 2 different associates \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{Association_8h_a49e957f0e7f022406e6c81895eed79b7}{cmp\+Name} (T $\ast$rhs, T $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares the name of 2 different associates \end{DoxyCompactList}\item 
+bool \hyperlink{Association_8h_a0d94d17cdf7ce760c4d131d58d6eb48a}{cmp\+Date} (\hyperlink{classEvent}{Event} $\ast$rhs, \hyperlink{classEvent}{Event} $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares 2 dates \end{DoxyCompactList}\item 
+bool \hyperlink{Association_8h_aec8efa10619563981c3aaf91e3889b18}{cmp\+Local} (\hyperlink{classEvent}{Event} $\ast$rhs, \hyperlink{classEvent}{Event} $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares 2 locals \end{DoxyCompactList}\item 
+bool \hyperlink{Association_8h_a02d68dc36b7585e8b71298fa2f21d610}{cmp\+Theme} (\hyperlink{classEvent}{Event} $\ast$rhs, \hyperlink{classEvent}{Event} $\ast$lhs)
+\begin{DoxyCompactList}\small\item\em compares 2 themes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Association_8h_a0d94d17cdf7ce760c4d131d58d6eb48a}\label{Association_8h_a0d94d17cdf7ce760c4d131d58d6eb48a}} 
+\index{Association.\+h@{Association.\+h}!cmp\+Date@{cmp\+Date}}
+\index{cmp\+Date@{cmp\+Date}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+Date()}{cmpDate()}}
+{\footnotesize\ttfamily bool cmp\+Date (\begin{DoxyParamCaption}\item[{\hyperlink{classEvent}{Event} $\ast$}]{rhs,  }\item[{\hyperlink{classEvent}{Event} $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares 2 dates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First date \\
+\hline
+{\em lhs} & -\/ Second date \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Association_8h_a7212dfc6bb07893e23fa977f18309ded}\label{Association_8h_a7212dfc6bb07893e23fa977f18309ded}} 
+\index{Association.\+h@{Association.\+h}!cmp\+ID@{cmp\+ID}}
+\index{cmp\+ID@{cmp\+ID}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+I\+D()}{cmpID()}}
+{\footnotesize\ttfamily bool cmp\+ID (\begin{DoxyParamCaption}\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{rhs,  }\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares the ID of 2 different associates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First associate \\
+\hline
+{\em lhs} & -\/ Second associate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Association_8h_aec8efa10619563981c3aaf91e3889b18}\label{Association_8h_aec8efa10619563981c3aaf91e3889b18}} 
+\index{Association.\+h@{Association.\+h}!cmp\+Local@{cmp\+Local}}
+\index{cmp\+Local@{cmp\+Local}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+Local()}{cmpLocal()}}
+{\footnotesize\ttfamily bool cmp\+Local (\begin{DoxyParamCaption}\item[{\hyperlink{classEvent}{Event} $\ast$}]{rhs,  }\item[{\hyperlink{classEvent}{Event} $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares 2 locals 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First local \\
+\hline
+{\em lhs} & -\/ Second local \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Association_8h_acd1fd4877ff6b5bf584be877a13d0588}\label{Association_8h_acd1fd4877ff6b5bf584be877a13d0588}} 
+\index{Association.\+h@{Association.\+h}!cmp\+Money@{cmp\+Money}}
+\index{cmp\+Money@{cmp\+Money}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+Money()}{cmpMoney()}}
+{\footnotesize\ttfamily bool cmp\+Money (\begin{DoxyParamCaption}\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{rhs,  }\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares the money of 2 different associates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First associate \\
+\hline
+{\em lhs} & -\/ Second associate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Association_8h_a49e957f0e7f022406e6c81895eed79b7}\label{Association_8h_a49e957f0e7f022406e6c81895eed79b7}} 
+\index{Association.\+h@{Association.\+h}!cmp\+Name@{cmp\+Name}}
+\index{cmp\+Name@{cmp\+Name}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+Name()}{cmpName()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool cmp\+Name (\begin{DoxyParamCaption}\item[{T $\ast$}]{rhs,  }\item[{T $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares the name of 2 different associates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First associate \\
+\hline
+{\em lhs} & -\/ Second associate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Association_8h_a02d68dc36b7585e8b71298fa2f21d610}\label{Association_8h_a02d68dc36b7585e8b71298fa2f21d610}} 
+\index{Association.\+h@{Association.\+h}!cmp\+Theme@{cmp\+Theme}}
+\index{cmp\+Theme@{cmp\+Theme}!Association.\+h@{Association.\+h}}
+\subsubsection{\texorpdfstring{cmp\+Theme()}{cmpTheme()}}
+{\footnotesize\ttfamily bool cmp\+Theme (\begin{DoxyParamCaption}\item[{\hyperlink{classEvent}{Event} $\ast$}]{rhs,  }\item[{\hyperlink{classEvent}{Event} $\ast$}]{lhs }\end{DoxyParamCaption})}
+
+
+
+compares 2 themes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & -\/ First theme \\
+\hline
+{\em lhs} & -\/ Second theme \\
+\hline
+\end{DoxyParams}

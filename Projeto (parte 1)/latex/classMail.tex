@@ -1,0 +1,248 @@
+\hypertarget{classMail}{}\section{Mail Class Reference}
+\label{classMail}\index{Mail@{Mail}}
+
+
+The \hyperlink{classMail}{Mail} Class.  
+
+
+
+
+{\ttfamily \#include $<$Mail.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMail_acd3d916cd6a769cdaf6e91dbc2c85699}{Mail} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classMail_a5801c10c9e03a2ea2f0def9f5a957e18}{Mail} (\hyperlink{classAssociate}{Associate} $\ast$associate, std\+::string \hyperlink{classMail_a2f54f71a529dec6345d84ae60562b207}{title}, std\+::string \hyperlink{classMail_aaa91a94ee92b2712218a9cae389554f7}{body}, std\+::string \hyperlink{classMail_aee9bc87682f6173b92bf135397f38162}{date})
+\begin{DoxyCompactList}\small\item\em Creates a new mail from the associate with a title and a body. \end{DoxyCompactList}\item 
+virtual \hyperlink{classMail_a7f59d642ff71033500e1fac06ce9b3b1}{$\sim$\+Mail} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classAssociate}{Associate} $\ast$ \hyperlink{classMail_a23db9880d8a7d0fed31668b895fc3899}{get\+Author} () const
+\begin{DoxyCompactList}\small\item\em Returns the author from the mail. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_aa51a6657dd3e594e8638ac4486660675}{get\+Title} () const
+\begin{DoxyCompactList}\small\item\em Returns the mail title. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_af89b1b3d0f3c9d92a272c06f18fbdec3}{get\+Body} () const
+\begin{DoxyCompactList}\small\item\em Returns the mail body. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_ac45841e601864ec3f84566c3ee77de9a}{get\+Date} () const
+\begin{DoxyCompactList}\small\item\em Returns the mail date. \end{DoxyCompactList}\item 
+void \hyperlink{classMail_acec00cbed8830746de97efeca4561dd8}{set\+Author} (\hyperlink{classAssociate}{Associate} $\ast$\hyperlink{classMail_acfe110a866f8cc54120d4f4ab0f8321b}{author})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the author from a mail. \end{DoxyCompactList}\item 
+void \hyperlink{classMail_aa57f6b5a2f81ded349476984c361275b}{set\+Title} (std\+::string \hyperlink{classMail_a2f54f71a529dec6345d84ae60562b207}{title})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the title from a mail. \end{DoxyCompactList}\item 
+void \hyperlink{classMail_a85ddf08af27648cc0835d66bd6b08dde}{set\+Body} (std\+::string \hyperlink{classMail_aaa91a94ee92b2712218a9cae389554f7}{body})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the body from a mail. \end{DoxyCompactList}\item 
+void \hyperlink{classMail_ac5c8d190278b895b2de786be431b0a30}{set\+Date} (std\+::string \hyperlink{classMail_aee9bc87682f6173b92bf135397f38162}{date})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the date from a mail. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAssociate}{Associate} $\ast$ \hyperlink{classMail_acfe110a866f8cc54120d4f4ab0f8321b}{author}
+\begin{DoxyCompactList}\small\item\em The mail\textquotesingle{}s author. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_a2f54f71a529dec6345d84ae60562b207}{title}
+\begin{DoxyCompactList}\small\item\em The mail\textquotesingle{}s title. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_aaa91a94ee92b2712218a9cae389554f7}{body}
+\begin{DoxyCompactList}\small\item\em The mail\textquotesingle{}s body. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMail_aee9bc87682f6173b92bf135397f38162}{date}
+\begin{DoxyCompactList}\small\item\em The mail\textquotesingle{}s date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classMail}{Mail} Class. 
+
+The \hyperlink{classNetwork}{Network} is used by the associates to send and receive mails. So, each mail will have an author, a title, the body of the mail and a data associated with it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMail_acd3d916cd6a769cdaf6e91dbc2c85699}\label{classMail_acd3d916cd6a769cdaf6e91dbc2c85699}} 
+\index{Mail@{Mail}!Mail@{Mail}}
+\index{Mail@{Mail}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{Mail()}{Mail()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mail\+::\+Mail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{classMail_a5801c10c9e03a2ea2f0def9f5a957e18}\label{classMail_a5801c10c9e03a2ea2f0def9f5a957e18}} 
+\index{Mail@{Mail}!Mail@{Mail}}
+\index{Mail@{Mail}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{Mail()}{Mail()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mail\+::\+Mail (\begin{DoxyParamCaption}\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{associate,  }\item[{std\+::string}]{title,  }\item[{std\+::string}]{body,  }\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+Creates a new mail from the associate with a title and a body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em associate} & -\/ The \hyperlink{classAssociate}{Associate} who sent the email \\
+\hline
+{\em title} & -\/ string with the mail\textquotesingle{}s name \\
+\hline
+{\em body} & -\/ string with all the mail body text \\
+\hline
+{\em date} & -\/ string with the mail\textquotesingle{}s date \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMail_a7f59d642ff71033500e1fac06ce9b3b1}\label{classMail_a7f59d642ff71033500e1fac06ce9b3b1}} 
+\index{Mail@{Mail}!````~Mail@{$\sim$\+Mail}}
+\index{````~Mail@{$\sim$\+Mail}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{$\sim$\+Mail()}{~Mail()}}
+{\footnotesize\ttfamily Mail\+::$\sim$\+Mail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMail_a23db9880d8a7d0fed31668b895fc3899}\label{classMail_a23db9880d8a7d0fed31668b895fc3899}} 
+\index{Mail@{Mail}!get\+Author@{get\+Author}}
+\index{get\+Author@{get\+Author}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{get\+Author()}{getAuthor()}}
+{\footnotesize\ttfamily \hyperlink{classAssociate}{Associate} $\ast$ Mail\+::get\+Author (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the author from the mail. 
+
+\mbox{\Hypertarget{classMail_af89b1b3d0f3c9d92a272c06f18fbdec3}\label{classMail_af89b1b3d0f3c9d92a272c06f18fbdec3}} 
+\index{Mail@{Mail}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{get\+Body()}{getBody()}}
+{\footnotesize\ttfamily string Mail\+::get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the mail body. 
+
+\mbox{\Hypertarget{classMail_ac45841e601864ec3f84566c3ee77de9a}\label{classMail_ac45841e601864ec3f84566c3ee77de9a}} 
+\index{Mail@{Mail}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily string Mail\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the mail date. 
+
+\mbox{\Hypertarget{classMail_aa51a6657dd3e594e8638ac4486660675}\label{classMail_aa51a6657dd3e594e8638ac4486660675}} 
+\index{Mail@{Mail}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{get\+Title()}{getTitle()}}
+{\footnotesize\ttfamily string Mail\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the mail title. 
+
+\mbox{\Hypertarget{classMail_acec00cbed8830746de97efeca4561dd8}\label{classMail_acec00cbed8830746de97efeca4561dd8}} 
+\index{Mail@{Mail}!set\+Author@{set\+Author}}
+\index{set\+Author@{set\+Author}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{set\+Author()}{setAuthor()}}
+{\footnotesize\ttfamily void Mail\+::set\+Author (\begin{DoxyParamCaption}\item[{\hyperlink{classAssociate}{Associate} $\ast$}]{author }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the author from a mail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & -\/ \hyperlink{classAssociate}{Associate} who wrote the mail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMail_a85ddf08af27648cc0835d66bd6b08dde}\label{classMail_a85ddf08af27648cc0835d66bd6b08dde}} 
+\index{Mail@{Mail}!set\+Body@{set\+Body}}
+\index{set\+Body@{set\+Body}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{set\+Body()}{setBody()}}
+{\footnotesize\ttfamily void Mail\+::set\+Body (\begin{DoxyParamCaption}\item[{std\+::string}]{body }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the body from a mail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & -\/ The body of the mail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMail_ac5c8d190278b895b2de786be431b0a30}\label{classMail_ac5c8d190278b895b2de786be431b0a30}} 
+\index{Mail@{Mail}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}}
+{\footnotesize\ttfamily void Mail\+::set\+Date (\begin{DoxyParamCaption}\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the date from a mail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & -\/ The date of the mail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMail_aa57f6b5a2f81ded349476984c361275b}\label{classMail_aa57f6b5a2f81ded349476984c361275b}} 
+\index{Mail@{Mail}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{set\+Title()}{setTitle()}}
+{\footnotesize\ttfamily void Mail\+::set\+Title (\begin{DoxyParamCaption}\item[{std\+::string}]{title }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the title from a mail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ The title of the mail \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMail_acfe110a866f8cc54120d4f4ab0f8321b}\label{classMail_acfe110a866f8cc54120d4f4ab0f8321b}} 
+\index{Mail@{Mail}!author@{author}}
+\index{author@{author}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{author}{author}}
+{\footnotesize\ttfamily \hyperlink{classAssociate}{Associate}$\ast$ Mail\+::author\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mail\textquotesingle{}s author. 
+
+\mbox{\Hypertarget{classMail_aaa91a94ee92b2712218a9cae389554f7}\label{classMail_aaa91a94ee92b2712218a9cae389554f7}} 
+\index{Mail@{Mail}!body@{body}}
+\index{body@{body}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily std\+::string Mail\+::body\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mail\textquotesingle{}s body. 
+
+\mbox{\Hypertarget{classMail_aee9bc87682f6173b92bf135397f38162}\label{classMail_aee9bc87682f6173b92bf135397f38162}} 
+\index{Mail@{Mail}!date@{date}}
+\index{date@{date}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily std\+::string Mail\+::date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mail\textquotesingle{}s date. 
+
+\mbox{\Hypertarget{classMail_a2f54f71a529dec6345d84ae60562b207}\label{classMail_a2f54f71a529dec6345d84ae60562b207}} 
+\index{Mail@{Mail}!title@{title}}
+\index{title@{title}!Mail@{Mail}}
+\subsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily std\+::string Mail\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mail\textquotesingle{}s title. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Mail_8h}{Mail.\+h}\item 
+\hyperlink{Mail_8cpp}{Mail.\+cpp}\end{DoxyCompactItemize}

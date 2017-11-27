@@ -1,0 +1,153 @@
+\hypertarget{classNetwork}{}\section{Network Class Reference}
+\label{classNetwork}\index{Network@{Network}}
+
+
+The \hyperlink{classNetwork}{Network} Class.  
+
+
+
+
+{\ttfamily \#include $<$Network.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNetwork_a3cc2fb4f8fa4d507077e8da85ce5a1c8}{Network} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classNetwork}{Network} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classNetwork_a6c20a000b0a40b33b39b26874a4d50dd}{Network} (std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$$>$ \hyperlink{classNetwork_a7d870918668129e7853c5374785955b1}{mails})
+\begin{DoxyCompactList}\small\item\em Full \hyperlink{classNetwork}{Network} Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}{$\sim$\+Network} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classNetwork}{Network} Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a2dfe751f83ea0ed37835baf23770d1b6}{set\+Mails} (std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$$>$ \hyperlink{classNetwork_a7d870918668129e7853c5374785955b1}{mails})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the vector containing the mails the network has in it. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$ $>$ \hyperlink{classNetwork_acd375ea0a8fb7558f15a432ce6354d93}{get\+Mails} () const
+\begin{DoxyCompactList}\small\item\em Returns, in a vector, all the mails the network has in it. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a848afdda14081f142404050833050d4b}{add\+Mail} (\hyperlink{classMail}{Mail} $\ast$new\+Mail)
+\begin{DoxyCompactList}\small\item\em add a mail do the vector containing all the mails \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_ab7eb46f37b172f7e7281ad5d27cb0ba0}{sort\+Mails} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Sorts the mails by their title and date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$ $>$ \hyperlink{classNetwork_a7d870918668129e7853c5374785955b1}{mails}
+\begin{DoxyCompactList}\small\item\em A vector of mails containing all the mails the network has in it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classNetwork}{Network} Class. 
+
+The \hyperlink{classNetwork}{Network} is used by the associates to send and receive mails. Only associates which have paid all the annual pays in the last 5 years can send and receive mails. The associates which have not paid any of the last 5 annual pays can neither receive or send mails. The rest of the associates can only receive mails. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNetwork_a3cc2fb4f8fa4d507077e8da85ce5a1c8}\label{classNetwork_a3cc2fb4f8fa4d507077e8da85ce5a1c8}} 
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\subsubsection{\texorpdfstring{Network()}{Network()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \hyperlink{classNetwork}{Network} Constructor. 
+
+\mbox{\Hypertarget{classNetwork_a6c20a000b0a40b33b39b26874a4d50dd}\label{classNetwork_a6c20a000b0a40b33b39b26874a4d50dd}} 
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\subsubsection{\texorpdfstring{Network()}{Network()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$$>$}]{mails }\end{DoxyParamCaption})}
+
+
+
+Full \hyperlink{classNetwork}{Network} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mails} & -\/ A vector containing pointers to all the mails in the network \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}\label{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}} 
+\index{Network@{Network}!````~Network@{$\sim$\+Network}}
+\index{````~Network@{$\sim$\+Network}!Network@{Network}}
+\subsubsection{\texorpdfstring{$\sim$\+Network()}{~Network()}}
+{\footnotesize\ttfamily Network\+::$\sim$\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default \hyperlink{classNetwork}{Network} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNetwork_a848afdda14081f142404050833050d4b}\label{classNetwork_a848afdda14081f142404050833050d4b}} 
+\index{Network@{Network}!add\+Mail@{add\+Mail}}
+\index{add\+Mail@{add\+Mail}!Network@{Network}}
+\subsubsection{\texorpdfstring{add\+Mail()}{addMail()}}
+{\footnotesize\ttfamily void Network\+::add\+Mail (\begin{DoxyParamCaption}\item[{\hyperlink{classMail}{Mail} $\ast$}]{new\+Mail }\end{DoxyParamCaption})}
+
+
+
+add a mail do the vector containing all the mails 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Mail} & -\/ the new mail to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_acd375ea0a8fb7558f15a432ce6354d93}\label{classNetwork_acd375ea0a8fb7558f15a432ce6354d93}} 
+\index{Network@{Network}!get\+Mails@{get\+Mails}}
+\index{get\+Mails@{get\+Mails}!Network@{Network}}
+\subsubsection{\texorpdfstring{get\+Mails()}{getMails()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classMail}{Mail} $\ast$ $>$ Network\+::get\+Mails (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns, in a vector, all the mails the network has in it. 
+
+\mbox{\Hypertarget{classNetwork_a2dfe751f83ea0ed37835baf23770d1b6}\label{classNetwork_a2dfe751f83ea0ed37835baf23770d1b6}} 
+\index{Network@{Network}!set\+Mails@{set\+Mails}}
+\index{set\+Mails@{set\+Mails}!Network@{Network}}
+\subsubsection{\texorpdfstring{set\+Mails()}{setMails()}}
+{\footnotesize\ttfamily void Network\+::set\+Mails (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classMail}{Mail} $\ast$$>$}]{mails }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the vector containing the mails the network has in it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mails} & -\/ vector of pointers to mails \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_ab7eb46f37b172f7e7281ad5d27cb0ba0}\label{classNetwork_ab7eb46f37b172f7e7281ad5d27cb0ba0}} 
+\index{Network@{Network}!sort\+Mails@{sort\+Mails}}
+\index{sort\+Mails@{sort\+Mails}!Network@{Network}}
+\subsubsection{\texorpdfstring{sort\+Mails()}{sortMails()}}
+{\footnotesize\ttfamily void Network\+::sort\+Mails (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Sorts the mails by their title and date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ receives a string with all the information of the mails \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNetwork_a7d870918668129e7853c5374785955b1}\label{classNetwork_a7d870918668129e7853c5374785955b1}} 
+\index{Network@{Network}!mails@{mails}}
+\index{mails@{mails}!Network@{Network}}
+\subsubsection{\texorpdfstring{mails}{mails}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classMail}{Mail} $\ast$$>$ Network\+::mails\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of mails containing all the mails the network has in it. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Network_8h}{Network.\+h}\item 
+\hyperlink{Network_8cpp}{Network.\+cpp}\end{DoxyCompactItemize}
