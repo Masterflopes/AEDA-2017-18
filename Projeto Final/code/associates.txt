@@ -1,0 +1,7 @@
+1/Pedro Costa/FEUP/[Neurociências, Envelhecimento e Doenças Degenerativas/Imunologia e Infeção/]/1325.3/[0/1/2/3/4/5/]/2
+2/Joao Conde/FCUP/[Neurociências, Envelhecimento e Doenças Degenerativas/Imunologia e Infeção/]/1342.3/[0/]/1
+3/Tiago Lopes/FDUP/[Neurociências, Envelhecimento e Doenças Degenerativas/Imunologia e Infeção/]/860/[0/1/]/0
+4/Nelson Costa/FBAUP/[Neurociências, Envelhecimento e Doenças Degenerativas/Imunologia e Infeção/]/1424.3/[0/]/1
+5/Nuno Ferreira/UTAD/[Biomedicina/Biologia Experimental/]/900/[5/]/0
+6/Laura Filipa/NovaSBE/[Neurociências, Envelhecimento e Doenças Degenerativas/Biologia Experimental/]/500/[5/]/0
+7/Isabel Henriques/ESSP/[Imunologia e Infeção/Diagnóstico, Terapêutica e Saúde Pública/]/900/[5/]/0

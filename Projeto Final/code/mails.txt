@@ -1,0 +1,4 @@
+1/Ola Mundo/Isto e um exemplo de mail/12-01-04
+2/Bom Dia/Ainda outro exemplo de mail/01-04-01
+1/Conferencia Especial/Avisa-se da criacao de uma conferencia especial/20-11-05
+4/Temporario/Apenas mais um exemplo/04-08-03

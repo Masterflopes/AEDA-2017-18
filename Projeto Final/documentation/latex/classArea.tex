@@ -1,0 +1,143 @@
+\hypertarget{classArea}{}\section{Area Class Reference}
+\label{classArea}\index{Area@{Area}}
+
+
+The \mbox{\hyperlink{classArea}{Area}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Area.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArea_aa92851fcffb0a9f1c6c8c283204f7003}{Area}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArea_afd32499f2246ef8007fd135d7503da16}{Area}} (std\+::string file\+\_\+string)
+\begin{DoxyCompactList}\small\item\em File Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classArea_ace0975982b61a16746c564a0d43a4cc8}{$\sim$\+Area}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classArea_acdbc3527be262d1ea1b9c961e823257f}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{classArea}{Area}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$ $>$ \mbox{\hyperlink{classArea_abf3bfb978d0a7d05fe2cbbad9ce7fef4}{get\+Sub\+Areas}} () const
+\begin{DoxyCompactList}\small\item\em Returns the subareas of the \mbox{\hyperlink{classArea}{Area}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea_a137ad0664d3993ff994e2381804459e2}{add\+Subarea}} (\mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$new\+Sub)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{classSubArea}{Sub\+Area}} to the vector containing all the Sub\+Areas of the \mbox{\hyperlink{classArea}{Area}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classArea_a24201719de9d9dfef7a720c036529dd7}{name}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classArea}{Area}}\textquotesingle{}s name. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$ $>$ \mbox{\hyperlink{classArea_af5eafd40b41ae847a009feef631ce07f}{subareas}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classArea}{Area}}\textquotesingle{}s Sub\+Areas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classArea}{Area}} Class. 
+
+An \mbox{\hyperlink{classAssociation}{Association}} consists in a group of associates. Each associate has interest in a variety of areas. Each area has some subareas. An area is distinguished by its name 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArea_aa92851fcffb0a9f1c6c8c283204f7003}\label{classArea_aa92851fcffb0a9f1c6c8c283204f7003}} 
+\index{Area@{Area}!Area@{Area}}
+\index{Area@{Area}!Area@{Area}}
+\subsubsection{\texorpdfstring{Area()}{Area()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Area\+::\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{classArea_afd32499f2246ef8007fd135d7503da16}\label{classArea_afd32499f2246ef8007fd135d7503da16}} 
+\index{Area@{Area}!Area@{Area}}
+\index{Area@{Area}!Area@{Area}}
+\subsubsection{\texorpdfstring{Area()}{Area()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Area\+::\+Area (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+File Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+string} & -\/ Reads a line from a file and creates the area and its subareas based on that information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArea_ace0975982b61a16746c564a0d43a4cc8}\label{classArea_ace0975982b61a16746c564a0d43a4cc8}} 
+\index{Area@{Area}!````~Area@{$\sim$\+Area}}
+\index{````~Area@{$\sim$\+Area}!Area@{Area}}
+\subsubsection{\texorpdfstring{$\sim$\+Area()}{~Area()}}
+{\footnotesize\ttfamily Area\+::$\sim$\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArea_a137ad0664d3993ff994e2381804459e2}\label{classArea_a137ad0664d3993ff994e2381804459e2}} 
+\index{Area@{Area}!add\+Subarea@{add\+Subarea}}
+\index{add\+Subarea@{add\+Subarea}!Area@{Area}}
+\subsubsection{\texorpdfstring{add\+Subarea()}{addSubarea()}}
+{\footnotesize\ttfamily void Area\+::add\+Subarea (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$}]{new\+Sub }\end{DoxyParamCaption})}
+
+
+
+Adds a \mbox{\hyperlink{classSubArea}{Sub\+Area}} to the vector containing all the Sub\+Areas of the \mbox{\hyperlink{classArea}{Area}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Sub} & -\/ The \mbox{\hyperlink{classSubArea}{Sub\+Area}} that is supposed to add to the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArea_acdbc3527be262d1ea1b9c961e823257f}\label{classArea_acdbc3527be262d1ea1b9c961e823257f}} 
+\index{Area@{Area}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Area@{Area}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Area\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the \mbox{\hyperlink{classArea}{Area}}. 
+
+\mbox{\Hypertarget{classArea_abf3bfb978d0a7d05fe2cbbad9ce7fef4}\label{classArea_abf3bfb978d0a7d05fe2cbbad9ce7fef4}} 
+\index{Area@{Area}!get\+Sub\+Areas@{get\+Sub\+Areas}}
+\index{get\+Sub\+Areas@{get\+Sub\+Areas}!Area@{Area}}
+\subsubsection{\texorpdfstring{get\+Sub\+Areas()}{getSubAreas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$ $>$ Area\+::get\+Sub\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the subareas of the \mbox{\hyperlink{classArea}{Area}}. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classArea_a24201719de9d9dfef7a720c036529dd7}\label{classArea_a24201719de9d9dfef7a720c036529dd7}} 
+\index{Area@{Area}!name@{name}}
+\index{name@{name}!Area@{Area}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Area\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \mbox{\hyperlink{classArea}{Area}}\textquotesingle{}s name. 
+
+\mbox{\Hypertarget{classArea_af5eafd40b41ae847a009feef631ce07f}\label{classArea_af5eafd40b41ae847a009feef631ce07f}} 
+\index{Area@{Area}!subareas@{subareas}}
+\index{subareas@{subareas}!Area@{Area}}
+\subsubsection{\texorpdfstring{subareas}{subareas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSubArea}{Sub\+Area}} $\ast$$>$ Area\+::subareas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \mbox{\hyperlink{classArea}{Area}}\textquotesingle{}s Sub\+Areas. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Area_8h}{Area.\+h}}\item 
+\mbox{\hyperlink{Area_8cpp}{Area.\+cpp}}\end{DoxyCompactItemize}

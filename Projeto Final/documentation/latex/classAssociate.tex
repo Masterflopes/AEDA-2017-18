@@ -1,0 +1,631 @@
+\hypertarget{classAssociate}{}\section{Associate Class Reference}
+\label{classAssociate}\index{Associate@{Associate}}
+
+
+The \mbox{\hyperlink{classAssociate}{Associate}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Associate.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAssociate_a624e687ad91b6311e7e493adab0a9adc}{Associate}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{classAssociate}{Associate}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate_abe5c3e0d0f938dd44924e9d488aad870}{Associate}} (int \mbox{\hyperlink{classAssociate_a55a1f311ac7cb8020e9631f283cb74e6}{unique\+ID}})
+\begin{DoxyCompactList}\small\item\em Temporary constructor to look in unordered\+\_\+set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate_ad27f76fd03a10e75d1b2660e60ba009f}{Associate}} (\mbox{\hyperlink{classAssociation}{Association}} $\ast$asso, std\+::string \mbox{\hyperlink{classAssociate_ad52875abacf1836cd879b7dffb88d589}{name}}, std\+::string \mbox{\hyperlink{classAssociate_a25b82eab07e159a91ebdc64fa4d656ab}{institution}}, std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$ interests)
+\begin{DoxyCompactList}\small\item\em Full \mbox{\hyperlink{classAssociate}{Associate}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate_acf0e7ad78370aef9d72896cd3385fd7c}{Associate}} (\mbox{\hyperlink{classAssociation}{Association}} $\ast$asso, std\+::string \mbox{\hyperlink{classAssociate_ad52875abacf1836cd879b7dffb88d589}{name}}, std\+::string \mbox{\hyperlink{classAssociate_a25b82eab07e159a91ebdc64fa4d656ab}{institution}}, std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$ interests, float \mbox{\hyperlink{classAssociate_adc7e2decb409cd226e1508c1c5df3b90}{personal\+Wallet}}, std\+::string \mbox{\hyperlink{classAssociate_aacf79a4e389c7db3d8636b788cb2089f}{status}}, std\+::vector$<$ int $>$ \mbox{\hyperlink{classAssociate_ad7d373d77a5c49eb845e89729962c30d}{paid\+Years}}, int \mbox{\hyperlink{classAssociate_a55a1f311ac7cb8020e9631f283cb74e6}{unique\+ID}}, int \mbox{\hyperlink{classAssociate_a5f697e757ce7e1be1ed4a2421679b804}{divulgations}})
+\begin{DoxyCompactList}\small\item\em Full \mbox{\hyperlink{classAssociate}{Associate}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate_a6265187f56438fd128bb56ad67bab04f}{Associate}} (\mbox{\hyperlink{classAssociation}{Association}} $\ast$\mbox{\hyperlink{classAssociate_a7871837a4c80adb4e39f2f67ae1bfce5}{association}}, std\+::string file\+\_\+string)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAssociate}{Associate}} Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classAssociate_ae7f51b6f8b7e33af9e5218a2c7319a32}{$\sim$\+Associate}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{classAssociate}{Associate}} Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_a85601dd07022fc20f76f9f761fdcec6a}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the \mbox{\hyperlink{classAssociate}{Associate}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAssociate_aaca11bf6dea5df3710931898e00a0944}{get\+Unique\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Returns the unique\+ID of the \mbox{\hyperlink{classAssociate}{Associate}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_a9f6109b8164cf8193f9fabd5ff2871f7}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Returns a string containing the status of the \mbox{\hyperlink{classAssociate}{Associate}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classAssociate_ab3837d6afb9cba8e9f3213ca9b8368b9}{get\+Paid\+Years}} () const
+\begin{DoxyCompactList}\small\item\em Returns a vector containing all the years the \mbox{\hyperlink{classAssociate}{Associate}} has paid. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAssociate_a75ad2c5af6c2a21fb1828f785751f390}{get\+Personal\+Wallet}} () const
+\begin{DoxyCompactList}\small\item\em Returns the amount of money the \mbox{\hyperlink{classAssociate}{Associate}} has (in float) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_acef0ddff899cbca55e3b19abc67f1800}{get\+Institution}} () const
+\begin{DoxyCompactList}\small\item\em Returns the associate\textquotesingle{}s institution. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ \mbox{\hyperlink{classAssociate_ac53645c77c48f2439dc3a5f8eb9ef530}{get\+Interest\+Areas}} () const
+\begin{DoxyCompactList}\small\item\em Returns a vector with all the associate\textquotesingle{}s interest areas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAssociate_a2ee36cec1d42559fdd1f9afe7ff85b2b}{get\+Divulgations}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of divulgations the associate has done so far. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a5b416da0898fd5dda854eb0027e9e8a1}{set\+Interest\+Areas}} (std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$ interest)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the vector containing the interest areas of an associate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_af44a5e1cc41845a60f17a4d23352448d}{set\+Status}} (std\+::string new\+Status)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the string representing the current status of an associate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a474ef6683f939d3ccec7bbbf1bd03f96}{set\+Paid\+Years}} (std\+::vector$<$ int $>$ paid)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the vector containing the years that the associate has paid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a575f0c9367cb22a88737952430fe6a48}{set\+Personall\+Wallet}} (float money)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the amount of money the associate has paid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_aa441347cdbef813e4603d2c67e0822fb}{set\+Institution}} (std\+::string inst)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the associate\textquotesingle{}s institution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a7c9f1c593da26eedc3a4f56302f67bec}{set\+Divulgations}} (int divulgation)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the number of divulgations the associate has done so far. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a3fcb7919843353de4d4591b2bd627189}{add\+To\+Wallet}} (float more\+\_\+money)
+\begin{DoxyCompactList}\small\item\em Adds a certain amount to the associate wallet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a81f6e7e09ce00a9bf2a805d47d542b90}{pay\+From\+Wallet}} (float less\+\_\+money)
+\begin{DoxyCompactList}\small\item\em Subtracts a certain amount from the associate wallet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a12bec7095075fd58fafb5ebf2a24e924}{add\+Paid\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Adds a year to the vector containing all the paid years. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_ac5d76c7a552e5ad9149fc968511532bf}{pay\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Effectuates the payment of a year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_aec791e8d29c2c8ccf9769a6ac49a3af5}{update\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Update the string representing the status of the associate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociate_a5d298ea460b494edc46c015af7e1a932}{inc\+Divulgations}} ()
+\begin{DoxyCompactList}\small\item\em Increments the number of divulgations to the network by the associate. Occurs every time a new \mbox{\hyperlink{classMail}{Mail}} is sent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAssociate_a147bd9c2b6148974d8c36f7a8f5b632a}{access\+Network}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the associate has access to see the contents of the network. Return true if so, false otherwise;. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAssociate_a9b836ab2c289e4fd8778c2fe01db6dfe}{share\+Network}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the associate can share a \mbox{\hyperlink{classMail}{Mail}} in the network. Return true if so, false otherwise. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_a5a47029128dc79e09527552c244da9af}{show\+Info}} () const
+\begin{DoxyCompactList}\small\item\em Returns a string containing all the info of a \mbox{\hyperlink{classAssociate}{Associate}}, in readable and user-\/friendly format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAssociate_a169cbe6746295386254610c7c9811085}{operator$<$}} (const \mbox{\hyperlink{classAssociate}{Associate}} \&lhs) const
+\begin{DoxyCompactList}\small\item\em Overloading $<$ operator If two associates have the same status, they will be ordered accordingly to their name, otherwise\+: contributor $>$ subscribe $>$ normal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate}{Associate}} \& \mbox{\hyperlink{classAssociate_a3b9d47c7e6dafad03a4b33f7eebec177}{operator=}} (const \mbox{\hyperlink{classAssociate}{Associate}} \&lhs)
+\begin{DoxyCompactList}\small\item\em Overloading = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAssociation}{Association}} $\ast$ \mbox{\hyperlink{classAssociate_a7871837a4c80adb4e39f2f67ae1bfce5}{association}}
+\begin{DoxyCompactList}\small\item\em The connection between the associate and the association. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_ad52875abacf1836cd879b7dffb88d589}{name}}
+\begin{DoxyCompactList}\small\item\em The associate\textquotesingle{}s name. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAssociate_adc7e2decb409cd226e1508c1c5df3b90}{personal\+Wallet}}
+\begin{DoxyCompactList}\small\item\em The amount of money the associate has. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_a25b82eab07e159a91ebdc64fa4d656ab}{institution}}
+\begin{DoxyCompactList}\small\item\em The institution to which the associate is connected. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ \mbox{\hyperlink{classAssociate_aa4083f0fff7ce7d580f7e2df8f9dbaf2}{interest\+Areas}}
+\begin{DoxyCompactList}\small\item\em A vector containing pointers to all the \mbox{\hyperlink{classAssociate}{Associate}} interest areas. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociate_aacf79a4e389c7db3d8636b788cb2089f}{status}}
+\begin{DoxyCompactList}\small\item\em contributor, subscriber, normal, the possible status \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classAssociate_ad7d373d77a5c49eb845e89729962c30d}{paid\+Years}}
+\begin{DoxyCompactList}\small\item\em A vector of integers containing all the year the \mbox{\hyperlink{classAssociate}{Associate}} has paid. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAssociate_a55a1f311ac7cb8020e9631f283cb74e6}{unique\+ID}}
+\begin{DoxyCompactList}\small\item\em The unique Identifier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAssociate_a5f697e757ce7e1be1ed4a2421679b804}{divulgations}}
+\begin{DoxyCompactList}\small\item\em The number of divulgations to the network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classAssociate_a9fcd0a229b70369a3f6beaf7a02fe58f}{id\+\_\+provider}} = 0
+\begin{DoxyCompactList}\small\item\em Will ensure that every instance of this class gets a unique identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classAssociate}{Associate}} Class. 
+
+An \mbox{\hyperlink{classAssociation}{Association}} consists in a group of associates. Although each associate has a name, they are distinguished by their unique ID. Besides this, each one also works for an Institution and has some scientific areas of interest. They also have access to a \mbox{\hyperlink{classNetwork}{Network}} where the associates can send and receive emails, taking into account the frequency the associates pay the annual pay. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAssociate_a624e687ad91b6311e7e493adab0a9adc}\label{classAssociate_a624e687ad91b6311e7e493adab0a9adc}} 
+\index{Associate@{Associate}!Associate@{Associate}}
+\index{Associate@{Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{Associate()}{Associate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Associate\+::\+Associate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{classAssociate}{Associate}} Constructor. 
+
+\mbox{\Hypertarget{classAssociate_abe5c3e0d0f938dd44924e9d488aad870}\label{classAssociate_abe5c3e0d0f938dd44924e9d488aad870}} 
+\index{Associate@{Associate}!Associate@{Associate}}
+\index{Associate@{Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{Associate()}{Associate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Associate\+::\+Associate (\begin{DoxyParamCaption}\item[{int}]{unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Temporary constructor to look in unordered\+\_\+set. 
+
+\mbox{\Hypertarget{classAssociate_ad27f76fd03a10e75d1b2660e60ba009f}\label{classAssociate_ad27f76fd03a10e75d1b2660e60ba009f}} 
+\index{Associate@{Associate}!Associate@{Associate}}
+\index{Associate@{Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{Associate()}{Associate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Associate\+::\+Associate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssociation}{Association}} $\ast$}]{asso,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{institution,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$}]{interests }\end{DoxyParamCaption})}
+
+
+
+Full \mbox{\hyperlink{classAssociate}{Associate}} Constructor. 
+
+The unique\+ID is given automatically and incrementally. Every associate has a predefined 500 personal Wallet start.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asso} & -\/ The \mbox{\hyperlink{classAssociation}{Association}} the associate belongs to \\
+\hline
+{\em name} & -\/ The associate\textquotesingle{}s name \\
+\hline
+{\em institution} & -\/ The associate\textquotesingle{}s institution \\
+\hline
+{\em interests} & -\/ The associate\textquotesingle{}s areas of interest \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_acf0e7ad78370aef9d72896cd3385fd7c}\label{classAssociate_acf0e7ad78370aef9d72896cd3385fd7c}} 
+\index{Associate@{Associate}!Associate@{Associate}}
+\index{Associate@{Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{Associate()}{Associate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Associate\+::\+Associate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssociation}{Association}} $\ast$}]{asso,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{institution,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$}]{interests,  }\item[{float}]{personal\+Wallet,  }\item[{std\+::string}]{status,  }\item[{std\+::vector$<$ int $>$}]{paid\+Years,  }\item[{int}]{unique\+ID,  }\item[{int}]{divulgations }\end{DoxyParamCaption})}
+
+
+
+Full \mbox{\hyperlink{classAssociate}{Associate}} Constructor. 
+
+The unique\+ID is given automatically and incrementally. Every associate has a predefined 500 personal Wallet start.
+
+
+\begin{DoxyParams}{Parameters}
+{\em asso} & -\/ The \mbox{\hyperlink{classAssociation}{Association}} the associate belongs to \\
+\hline
+{\em name} & -\/ The associate\textquotesingle{}s name \\
+\hline
+{\em institution} & -\/ The associate\textquotesingle{}s institution \\
+\hline
+{\em interests} & -\/ The associate\textquotesingle{}s areas of interest \\
+\hline
+{\em status} & -\/ The associate\textquotesingle{}s status \\
+\hline
+{\em paid\+Years} & -\/ The Yeas Paid \\
+\hline
+{\em unique\+ID} & -\/ the copied ID \\
+\hline
+{\em divulgations} & -\/ number of divulgations \\
+\hline
+{\em personal\+Wallet} & -\/ the money \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a6265187f56438fd128bb56ad67bab04f}\label{classAssociate_a6265187f56438fd128bb56ad67bab04f}} 
+\index{Associate@{Associate}!Associate@{Associate}}
+\index{Associate@{Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{Associate()}{Associate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Associate\+::\+Associate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssociation}{Association}} $\ast$}]{association,  }\item[{std\+::string}]{file\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAssociate}{Associate}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em association} & -\/ The \mbox{\hyperlink{classAssociation}{Association}} the associate belongs tu \\
+\hline
+{\em file\+\_\+string} & -\/ a string from a file containing all the info in the following order\+: I\+D/ Name/ Instituion/ Interest Areas/ Wallet/ Paid\+Years/ Number of divulgations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_ae7f51b6f8b7e33af9e5218a2c7319a32}\label{classAssociate_ae7f51b6f8b7e33af9e5218a2c7319a32}} 
+\index{Associate@{Associate}!````~Associate@{$\sim$\+Associate}}
+\index{````~Associate@{$\sim$\+Associate}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{$\sim$\+Associate()}{~Associate()}}
+{\footnotesize\ttfamily Associate\+::$\sim$\+Associate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default \mbox{\hyperlink{classAssociate}{Associate}} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAssociate_a147bd9c2b6148974d8c36f7a8f5b632a}\label{classAssociate_a147bd9c2b6148974d8c36f7a8f5b632a}} 
+\index{Associate@{Associate}!access\+Network@{access\+Network}}
+\index{access\+Network@{access\+Network}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{access\+Network()}{accessNetwork()}}
+{\footnotesize\ttfamily bool Associate\+::access\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if the associate has access to see the contents of the network. Return true if so, false otherwise;. 
+
+\mbox{\Hypertarget{classAssociate_a12bec7095075fd58fafb5ebf2a24e924}\label{classAssociate_a12bec7095075fd58fafb5ebf2a24e924}} 
+\index{Associate@{Associate}!add\+Paid\+Year@{add\+Paid\+Year}}
+\index{add\+Paid\+Year@{add\+Paid\+Year}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{add\+Paid\+Year()}{addPaidYear()}}
+{\footnotesize\ttfamily void Associate\+::add\+Paid\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Adds a year to the vector containing all the paid years. 
+
+Applicable after doing a yearly payment
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ the year paid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a3fcb7919843353de4d4591b2bd627189}\label{classAssociate_a3fcb7919843353de4d4591b2bd627189}} 
+\index{Associate@{Associate}!add\+To\+Wallet@{add\+To\+Wallet}}
+\index{add\+To\+Wallet@{add\+To\+Wallet}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{add\+To\+Wallet()}{addToWallet()}}
+{\footnotesize\ttfamily void Associate\+::add\+To\+Wallet (\begin{DoxyParamCaption}\item[{float}]{more\+\_\+money }\end{DoxyParamCaption})}
+
+
+
+Adds a certain amount to the associate wallet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em more\+\_\+money} & -\/ the amount to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a2ee36cec1d42559fdd1f9afe7ff85b2b}\label{classAssociate_a2ee36cec1d42559fdd1f9afe7ff85b2b}} 
+\index{Associate@{Associate}!get\+Divulgations@{get\+Divulgations}}
+\index{get\+Divulgations@{get\+Divulgations}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Divulgations()}{getDivulgations()}}
+{\footnotesize\ttfamily int Associate\+::get\+Divulgations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of divulgations the associate has done so far. 
+
+\mbox{\Hypertarget{classAssociate_acef0ddff899cbca55e3b19abc67f1800}\label{classAssociate_acef0ddff899cbca55e3b19abc67f1800}} 
+\index{Associate@{Associate}!get\+Institution@{get\+Institution}}
+\index{get\+Institution@{get\+Institution}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Institution()}{getInstitution()}}
+{\footnotesize\ttfamily string Associate\+::get\+Institution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the associate\textquotesingle{}s institution. 
+
+\mbox{\Hypertarget{classAssociate_ac53645c77c48f2439dc3a5f8eb9ef530}\label{classAssociate_ac53645c77c48f2439dc3a5f8eb9ef530}} 
+\index{Associate@{Associate}!get\+Interest\+Areas@{get\+Interest\+Areas}}
+\index{get\+Interest\+Areas@{get\+Interest\+Areas}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Interest\+Areas()}{getInterestAreas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ Associate\+::get\+Interest\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector with all the associate\textquotesingle{}s interest areas. 
+
+\mbox{\Hypertarget{classAssociate_a85601dd07022fc20f76f9f761fdcec6a}\label{classAssociate_a85601dd07022fc20f76f9f761fdcec6a}} 
+\index{Associate@{Associate}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Associate\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the \mbox{\hyperlink{classAssociate}{Associate}}. 
+
+\mbox{\Hypertarget{classAssociate_ab3837d6afb9cba8e9f3213ca9b8368b9}\label{classAssociate_ab3837d6afb9cba8e9f3213ca9b8368b9}} 
+\index{Associate@{Associate}!get\+Paid\+Years@{get\+Paid\+Years}}
+\index{get\+Paid\+Years@{get\+Paid\+Years}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Paid\+Years()}{getPaidYears()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Associate\+::get\+Paid\+Years (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector containing all the years the \mbox{\hyperlink{classAssociate}{Associate}} has paid. 
+
+\mbox{\Hypertarget{classAssociate_a75ad2c5af6c2a21fb1828f785751f390}\label{classAssociate_a75ad2c5af6c2a21fb1828f785751f390}} 
+\index{Associate@{Associate}!get\+Personal\+Wallet@{get\+Personal\+Wallet}}
+\index{get\+Personal\+Wallet@{get\+Personal\+Wallet}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Personal\+Wallet()}{getPersonalWallet()}}
+{\footnotesize\ttfamily float Associate\+::get\+Personal\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the amount of money the \mbox{\hyperlink{classAssociate}{Associate}} has (in float) 
+
+\mbox{\Hypertarget{classAssociate_a9f6109b8164cf8193f9fabd5ff2871f7}\label{classAssociate_a9f6109b8164cf8193f9fabd5ff2871f7}} 
+\index{Associate@{Associate}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Status()}{getStatus()}}
+{\footnotesize\ttfamily string Associate\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a string containing the status of the \mbox{\hyperlink{classAssociate}{Associate}}. 
+
+E.\+g, \char`\"{}contributor\char`\"{}, \char`\"{}normal\char`\"{} \mbox{\Hypertarget{classAssociate_aaca11bf6dea5df3710931898e00a0944}\label{classAssociate_aaca11bf6dea5df3710931898e00a0944}} 
+\index{Associate@{Associate}!get\+Unique\+ID@{get\+Unique\+ID}}
+\index{get\+Unique\+ID@{get\+Unique\+ID}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{get\+Unique\+I\+D()}{getUniqueID()}}
+{\footnotesize\ttfamily int Associate\+::get\+Unique\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the unique\+ID of the \mbox{\hyperlink{classAssociate}{Associate}}. 
+
+\mbox{\Hypertarget{classAssociate_a5d298ea460b494edc46c015af7e1a932}\label{classAssociate_a5d298ea460b494edc46c015af7e1a932}} 
+\index{Associate@{Associate}!inc\+Divulgations@{inc\+Divulgations}}
+\index{inc\+Divulgations@{inc\+Divulgations}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{inc\+Divulgations()}{incDivulgations()}}
+{\footnotesize\ttfamily void Associate\+::inc\+Divulgations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increments the number of divulgations to the network by the associate. Occurs every time a new \mbox{\hyperlink{classMail}{Mail}} is sent. 
+
+\mbox{\Hypertarget{classAssociate_a169cbe6746295386254610c7c9811085}\label{classAssociate_a169cbe6746295386254610c7c9811085}} 
+\index{Associate@{Associate}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Associate\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAssociate}{Associate}} \&}]{lhs }\end{DoxyParamCaption}) const}
+
+
+
+Overloading $<$ operator If two associates have the same status, they will be ordered accordingly to their name, otherwise\+: contributor $>$ subscribe $>$ normal. 
+
+\mbox{\Hypertarget{classAssociate_a3b9d47c7e6dafad03a4b33f7eebec177}\label{classAssociate_a3b9d47c7e6dafad03a4b33f7eebec177}} 
+\index{Associate@{Associate}!operator=@{operator=}}
+\index{operator=@{operator=}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssociate}{Associate}} \& Associate\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAssociate}{Associate}} \&}]{lhs }\end{DoxyParamCaption})}
+
+
+
+Overloading = operator. 
+
+\mbox{\Hypertarget{classAssociate_a81f6e7e09ce00a9bf2a805d47d542b90}\label{classAssociate_a81f6e7e09ce00a9bf2a805d47d542b90}} 
+\index{Associate@{Associate}!pay\+From\+Wallet@{pay\+From\+Wallet}}
+\index{pay\+From\+Wallet@{pay\+From\+Wallet}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{pay\+From\+Wallet()}{payFromWallet()}}
+{\footnotesize\ttfamily void Associate\+::pay\+From\+Wallet (\begin{DoxyParamCaption}\item[{float}]{less\+\_\+money }\end{DoxyParamCaption})}
+
+
+
+Subtracts a certain amount from the associate wallet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em less\+\_\+money} & -\/ the amount to be subtracted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_ac5d76c7a552e5ad9149fc968511532bf}\label{classAssociate_ac5d76c7a552e5ad9149fc968511532bf}} 
+\index{Associate@{Associate}!pay\+Year@{pay\+Year}}
+\index{pay\+Year@{pay\+Year}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{pay\+Year()}{payYear()}}
+{\footnotesize\ttfamily void Associate\+::pay\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Effectuates the payment of a year. 
+
+Checks if the associate has enough money to do such payment and if the associate has all the years before paid up to date. If it has no money, throws the correspondent exception (\mbox{\hyperlink{classNotEnoughMoney}{Not\+Enough\+Money}}). If his payments are not up to date, throws the exception \mbox{\hyperlink{classNotUpToDate}{Not\+Up\+To\+Date}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ the year to be paid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a7c9f1c593da26eedc3a4f56302f67bec}\label{classAssociate_a7c9f1c593da26eedc3a4f56302f67bec}} 
+\index{Associate@{Associate}!set\+Divulgations@{set\+Divulgations}}
+\index{set\+Divulgations@{set\+Divulgations}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Divulgations()}{setDivulgations()}}
+{\footnotesize\ttfamily void Associate\+::set\+Divulgations (\begin{DoxyParamCaption}\item[{int}]{divulgation }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the number of divulgations the associate has done so far. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em divulgation} & -\/ the new number of divulgations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_aa441347cdbef813e4603d2c67e0822fb}\label{classAssociate_aa441347cdbef813e4603d2c67e0822fb}} 
+\index{Associate@{Associate}!set\+Institution@{set\+Institution}}
+\index{set\+Institution@{set\+Institution}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Institution()}{setInstitution()}}
+{\footnotesize\ttfamily void Associate\+::set\+Institution (\begin{DoxyParamCaption}\item[{std\+::string}]{inst }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the associate\textquotesingle{}s institution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & -\/ the new institution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a5b416da0898fd5dda854eb0027e9e8a1}\label{classAssociate_a5b416da0898fd5dda854eb0027e9e8a1}} 
+\index{Associate@{Associate}!set\+Interest\+Areas@{set\+Interest\+Areas}}
+\index{set\+Interest\+Areas@{set\+Interest\+Areas}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Interest\+Areas()}{setInterestAreas()}}
+{\footnotesize\ttfamily void Associate\+::set\+Interest\+Areas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$$>$}]{interest }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the vector containing the interest areas of an associate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interest} & -\/ vector of pointers to areas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a474ef6683f939d3ccec7bbbf1bd03f96}\label{classAssociate_a474ef6683f939d3ccec7bbbf1bd03f96}} 
+\index{Associate@{Associate}!set\+Paid\+Years@{set\+Paid\+Years}}
+\index{set\+Paid\+Years@{set\+Paid\+Years}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Paid\+Years()}{setPaidYears()}}
+{\footnotesize\ttfamily void Associate\+::set\+Paid\+Years (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{paid }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the vector containing the years that the associate has paid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paid} & -\/ a vector of ints representing the years \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a575f0c9367cb22a88737952430fe6a48}\label{classAssociate_a575f0c9367cb22a88737952430fe6a48}} 
+\index{Associate@{Associate}!set\+Personall\+Wallet@{set\+Personall\+Wallet}}
+\index{set\+Personall\+Wallet@{set\+Personall\+Wallet}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Personall\+Wallet()}{setPersonallWallet()}}
+{\footnotesize\ttfamily void Associate\+::set\+Personall\+Wallet (\begin{DoxyParamCaption}\item[{float}]{money }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the amount of money the associate has paid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em money} & -\/ the new amount of money (float) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_af44a5e1cc41845a60f17a4d23352448d}\label{classAssociate_af44a5e1cc41845a60f17a4d23352448d}} 
+\index{Associate@{Associate}!set\+Status@{set\+Status}}
+\index{set\+Status@{set\+Status}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{set\+Status()}{setStatus()}}
+{\footnotesize\ttfamily void Associate\+::set\+Status (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Status }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the string representing the current status of an associate. 
+
+The possible status are \char`\"{}normal\char`\"{}, \char`\"{}subscriber\char`\"{}, \char`\"{}normal\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Status} & -\/ String with the new status \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociate_a9b836ab2c289e4fd8778c2fe01db6dfe}\label{classAssociate_a9b836ab2c289e4fd8778c2fe01db6dfe}} 
+\index{Associate@{Associate}!share\+Network@{share\+Network}}
+\index{share\+Network@{share\+Network}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{share\+Network()}{shareNetwork()}}
+{\footnotesize\ttfamily bool Associate\+::share\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if the associate can share a \mbox{\hyperlink{classMail}{Mail}} in the network. Return true if so, false otherwise. 
+
+\mbox{\Hypertarget{classAssociate_a5a47029128dc79e09527552c244da9af}\label{classAssociate_a5a47029128dc79e09527552c244da9af}} 
+\index{Associate@{Associate}!show\+Info@{show\+Info}}
+\index{show\+Info@{show\+Info}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{show\+Info()}{showInfo()}}
+{\footnotesize\ttfamily string Associate\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a string containing all the info of a \mbox{\hyperlink{classAssociate}{Associate}}, in readable and user-\/friendly format. 
+
+\mbox{\Hypertarget{classAssociate_aec791e8d29c2c8ccf9769a6ac49a3af5}\label{classAssociate_aec791e8d29c2c8ccf9769a6ac49a3af5}} 
+\index{Associate@{Associate}!update\+Status@{update\+Status}}
+\index{update\+Status@{update\+Status}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{update\+Status()}{updateStatus()}}
+{\footnotesize\ttfamily void Associate\+::update\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the string representing the status of the associate. 
+
+Checks with the static variable of the \mbox{\hyperlink{classAssociation}{Association}} Current Year to see if the associate has the payments up to date (with the 5 years delay) and updates the string to its correspondent value. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAssociate_a7871837a4c80adb4e39f2f67ae1bfce5}\label{classAssociate_a7871837a4c80adb4e39f2f67ae1bfce5}} 
+\index{Associate@{Associate}!association@{association}}
+\index{association@{association}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{association}{association}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssociation}{Association}}$\ast$ Associate\+::association\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The connection between the associate and the association. 
+
+\mbox{\Hypertarget{classAssociate_a5f697e757ce7e1be1ed4a2421679b804}\label{classAssociate_a5f697e757ce7e1be1ed4a2421679b804}} 
+\index{Associate@{Associate}!divulgations@{divulgations}}
+\index{divulgations@{divulgations}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{divulgations}{divulgations}}
+{\footnotesize\ttfamily int Associate\+::divulgations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of divulgations to the network. 
+
+\mbox{\Hypertarget{classAssociate_a9fcd0a229b70369a3f6beaf7a02fe58f}\label{classAssociate_a9fcd0a229b70369a3f6beaf7a02fe58f}} 
+\index{Associate@{Associate}!id\+\_\+provider@{id\+\_\+provider}}
+\index{id\+\_\+provider@{id\+\_\+provider}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{id\+\_\+provider}{id\_provider}}
+{\footnotesize\ttfamily int Associate\+::id\+\_\+provider = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Will ensure that every instance of this class gets a unique identifier. 
+
+\mbox{\Hypertarget{classAssociate_a25b82eab07e159a91ebdc64fa4d656ab}\label{classAssociate_a25b82eab07e159a91ebdc64fa4d656ab}} 
+\index{Associate@{Associate}!institution@{institution}}
+\index{institution@{institution}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{institution}{institution}}
+{\footnotesize\ttfamily std\+::string Associate\+::institution\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The institution to which the associate is connected. 
+
+\mbox{\Hypertarget{classAssociate_aa4083f0fff7ce7d580f7e2df8f9dbaf2}\label{classAssociate_aa4083f0fff7ce7d580f7e2df8f9dbaf2}} 
+\index{Associate@{Associate}!interest\+Areas@{interest\+Areas}}
+\index{interest\+Areas@{interest\+Areas}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{interest\+Areas}{interestAreas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classArea}{Area}} $\ast$$>$ Associate\+::interest\+Areas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector containing pointers to all the \mbox{\hyperlink{classAssociate}{Associate}} interest areas. 
+
+\mbox{\Hypertarget{classAssociate_ad52875abacf1836cd879b7dffb88d589}\label{classAssociate_ad52875abacf1836cd879b7dffb88d589}} 
+\index{Associate@{Associate}!name@{name}}
+\index{name@{name}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Associate\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The associate\textquotesingle{}s name. 
+
+\mbox{\Hypertarget{classAssociate_ad7d373d77a5c49eb845e89729962c30d}\label{classAssociate_ad7d373d77a5c49eb845e89729962c30d}} 
+\index{Associate@{Associate}!paid\+Years@{paid\+Years}}
+\index{paid\+Years@{paid\+Years}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{paid\+Years}{paidYears}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Associate\+::paid\+Years\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of integers containing all the year the \mbox{\hyperlink{classAssociate}{Associate}} has paid. 
+
+\mbox{\Hypertarget{classAssociate_adc7e2decb409cd226e1508c1c5df3b90}\label{classAssociate_adc7e2decb409cd226e1508c1c5df3b90}} 
+\index{Associate@{Associate}!personal\+Wallet@{personal\+Wallet}}
+\index{personal\+Wallet@{personal\+Wallet}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{personal\+Wallet}{personalWallet}}
+{\footnotesize\ttfamily float Associate\+::personal\+Wallet\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The amount of money the associate has. 
+
+\mbox{\Hypertarget{classAssociate_aacf79a4e389c7db3d8636b788cb2089f}\label{classAssociate_aacf79a4e389c7db3d8636b788cb2089f}} 
+\index{Associate@{Associate}!status@{status}}
+\index{status@{status}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily std\+::string Associate\+::status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+contributor, subscriber, normal, the possible status 
+
+\mbox{\Hypertarget{classAssociate_a55a1f311ac7cb8020e9631f283cb74e6}\label{classAssociate_a55a1f311ac7cb8020e9631f283cb74e6}} 
+\index{Associate@{Associate}!unique\+ID@{unique\+ID}}
+\index{unique\+ID@{unique\+ID}!Associate@{Associate}}
+\subsubsection{\texorpdfstring{unique\+ID}{uniqueID}}
+{\footnotesize\ttfamily int Associate\+::unique\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The unique Identifier. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Associate_8h}{Associate.\+h}}\item 
+\mbox{\hyperlink{Associate_8cpp}{Associate.\+cpp}}\end{DoxyCompactItemize}

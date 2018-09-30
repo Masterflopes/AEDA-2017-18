@@ -1,0 +1,5 @@
+Neurociências, Envelhecimento e Doenças Degenerativas/Neurociências - Molecular e Celular/NEU-NMC/Neurociências - Sistemas, Clínica e Comportamento/NEU-SCC/Biologia do Envelhecimento/NEU-BEN/Degeneração de Orgãos e Sistemas/NEU-OSD
+Imunologia e Infeção/Imunologia e Inflamação/IMI-IMU/Microbiologia e Infeção/IMI-MIC
+Diagnóstico, Terapêutica e Saúde Pública/Epidemiologia/DTP-EPI/Saúde Pública e Fatores Ambientais/DTP-SAP/Farmacologia e Toxicologia/DTP-FTO/Fisiologia do Exercício e Ciências do Desporto/DTP-DES/Investigação Clínica/DTP-PIC
+Biomedicina/Oncobiologia/BIM-ONC/Mecanismos de Doença/BIM-MEC/Metabolismo e Nutrição/BIM-MET/Medicina Regenerativa/BIM-MED
+Biologia Experimental/Genética e Genómica/BEX-GMG/Biologia Celular e Molecular/BEX-BCM/Biologia do Desenvolvimento/BEX-BID/Biologia Computacional e Bioinformática/BEX-BCB

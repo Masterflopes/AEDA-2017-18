@@ -1,0 +1,776 @@
+\hypertarget{classAssociation}{}\section{Association Class Reference}
+\label{classAssociation}\index{Association@{Association}}
+
+
+The \mbox{\hyperlink{classAssociation}{Association}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Association.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAssociation_abf287524f5ab9abf66059e5fa959340b}{Association}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociation_a0773254cf0a1377e144a39b36c99d74d}{Association}} (std\+::string \mbox{\hyperlink{classAssociation_a165477d8d99c99a659d2f193b39ba1f8}{name}})
+\begin{DoxyCompactList}\small\item\em One Argument Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociation_aaf75146fc564138ae2ae2430eb7926a2}{Association}} (std\+::string file, \mbox{\hyperlink{classNetwork}{Network}} $\ast$rede)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAssociation}{Association}} Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classAssociation_adc0ad6a21b904d08c1d392550df9da59}{$\sim$\+Association}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{classAssociation}{Association}} Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a8bd23fd6c727963237bf85a6374ab6d8}{set\+Name}} (std\+::string \mbox{\hyperlink{classAssociation_a165477d8d99c99a659d2f193b39ba1f8}{name}})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the name of the association. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_acbeba5c80457ba1c307c212bcad08b82}{set\+Fund}} (long double \mbox{\hyperlink{classAssociation_a891f18ca3dbbbdfa2e8fab54b1683133}{fund}})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the main\+Fund of the association. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a4279bd391a3110e4110d3f300b3423a3}{set\+Annual\+Pay}} (float \mbox{\hyperlink{classAssociation_a19f8a7aad1491bc14f558b0b852da0a4}{annual\+Pay}})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the annual pay for every associate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a5611bc364e24e70f110332d1b2c63a08}{set\+Events}} (std\+::vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$$>$ all\+\_\+events)
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the vector containing the pointers to the events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_afa9bdcebf905cddc52870dd156a14d54}{set\+Net\+Work}} (\mbox{\hyperlink{classNetwork}{Network}} $\ast$\mbox{\hyperlink{classAssociation_a6747cedd4ce14a3b890c8ac87f676192}{network}})
+\begin{DoxyCompactList}\small\item\em Sets/\+Changes the network of the association. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_ab9b849706f996d80ed3439d43d06a958}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the association. \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{classAssociation_a4834d8fe0057ca4c55fa3e83bc47aae5}{get\+Fund}} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the monetary fund of the association. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAssociation_aa3bd82b207ae1ac0e44df1b481d4a8a1}{get\+Annual\+Pay}} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the annual pay for every associate. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a3deb177639e3c8042f7400f336fdda08}{get\+Events}} () const
+\begin{DoxyCompactList}\small\item\em Returns a vector containing pointers to all the events that the \mbox{\hyperlink{classAssociation}{Association}} has. \end{DoxyCompactList}\item 
+std\+::set$<$ \mbox{\hyperlink{classAssociate}{Associate}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a7ef9441d3b0a176012f393453344fdf1}{get\+Associates}} () const
+\begin{DoxyCompactList}\small\item\em Returns the set containing pointers to all the associates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Association_8h_a867982abd2e9432d5bed2574754bad3c}{Hash\+Tab\+Inactive\+Associate}} \mbox{\hyperlink{classAssociation_a8f80d4cad7e99335683d3de0b44a0a00}{get\+Inactive\+Associates}} () const
+\begin{DoxyCompactList}\small\item\em Returns the hashtable containing points to all the associates who haven\textquotesingle{}t paid in 5 years. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNetwork}{Network}} $\ast$ \mbox{\hyperlink{classAssociation_aa937fe1fcf8fb9f16a34ece38fef73d3}{get\+Network}} () const
+\begin{DoxyCompactList}\small\item\em Returns the pointer to the association\textquotesingle{}s network. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_ac77af0215fb992c31d4a048a00f642b9}{add\+Associate}} (\mbox{\hyperlink{classAssociate}{Associate}} $\ast$new\+Asso)
+\begin{DoxyCompactList}\small\item\em Adds a new \mbox{\hyperlink{classAssociate}{Associate}} to the association. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_ab0f1b461051c5a7844e6ce490b7caea1}{remove\+Associate}} (int unique\+ID)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{classAssociate}{Associate}} from the association (does not delete it, since it can exist out of the \mbox{\hyperlink{classAssociation}{Association}} scope) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_aafcd73622038c5174a70b1c03041810d}{update\+All\+Associates}} ()
+\begin{DoxyCompactList}\small\item\em Updates the status from all associates to prevent ignoring new changes made to them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAssociate}{Associate}} $\ast$ \mbox{\hyperlink{classAssociation_a0c9670f1508da038f12e4ed11042189e}{get\+Asso\+By\+Id}} (int unique\+ID)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to an \mbox{\hyperlink{classAssociate}{Associate}} with a certain ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classAssociate}{Associate}} $\ast$$>$ \mbox{\hyperlink{classAssociation_a89d561169e68f61edd79cbef11bae683}{sort\+Associates}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Sorts the associates by their name, id and wallet value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a48cf9a1d1e3d2e0e588cbbe7d2d5cd3b}{add\+To\+Fund}} (float income)
+\begin{DoxyCompactList}\small\item\em Adds the money received from the annual payments to the \mbox{\hyperlink{classAssociation}{Association}} fund. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_aa018edd1d345ca144f648096df9e9bf4}{update\+Semester}} ()
+\begin{DoxyCompactList}\small\item\em Updates the current year. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_afd8dd744fba29817387841f4b6870c2d}{update\+Payment}} ()
+\begin{DoxyCompactList}\small\item\em Makes the annual payment of every associate automatically. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_a266f2b14cd40429396b93ca29abcbf0c}{show\+All\+Associates}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string containing all the information about every associate in a readable and user-\/friendly way. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_ae3c5683c5fb9d62f5bf2b9d38be3c8dc}{move\+Associates}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a46f83e00e0201f25129a5c8167969661}{get\+Areas}} () const
+\begin{DoxyCompactList}\small\item\em Returns the vector containing pointers to all the areas. \end{DoxyCompactList}\item 
+std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a595bd9c5abaf1ceaa62ac8fb70d359c6}{get\+Queue1}} () const
+\begin{DoxyCompactList}\small\item\em Returns the priority queue containing pointers to all the proposed Events to phase 1. \end{DoxyCompactList}\item 
+std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a1600f284c97b98836cac69fc4b21d5f6}{get\+Queue2}} () const
+\begin{DoxyCompactList}\small\item\em Returns the priority queue containing pointers to all the proposed Events to phase 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_aaf6b3eabb3b20c31a56f69913cb3fdb3}{push\+To\+Queue}} (\mbox{\hyperlink{classEvent}{Event}} $\ast$evento)
+\begin{DoxyCompactList}\small\item\em Pushes an \mbox{\hyperlink{classEvent}{Event}} to the right queue according with the phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a33ebf26ce910d02ce8a702e4ff86551b}{add\+Area}} (\mbox{\hyperlink{classArea}{Area}} $\ast$new\+Area)
+\begin{DoxyCompactList}\small\item\em Adds a new \mbox{\hyperlink{classArea}{Area}} to the association. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_a149a29d7d7b59d15dadd84a2289c87e4}{show\+Areas}} () const
+\begin{DoxyCompactList}\small\item\em Returns a string containing info about all the areas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a047b29b0d39da0695de0200ad495dee1}{add\+Event}} (\mbox{\hyperlink{classEvent}{Event}} $\ast$new\+Event)
+\begin{DoxyCompactList}\small\item\em Adds a new event to the vector containing all the events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a944406d8918729d1b9f0c7b5e34997d2}{accept\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the events that were proposed are accepted or not by the \mbox{\hyperlink{classAssociation}{Association}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_aff3817596c302056ca73ca6a98e7bf3c}{show\+Events}} () const
+\begin{DoxyCompactList}\small\item\em Returns all the events. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAssociation_a7d743e480f5dbba9189a40d17b931121}{show\+Requests}} () const
+\begin{DoxyCompactList}\small\item\em Returns a string containing info about the event request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a672445f247a9bab36b87e770f4b0f512}{remove\+Event}} (std\+::string date, int phase)
+\begin{DoxyCompactList}\small\item\em Removes an event in the vector containing all the events. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_af5a5354a9e84e8441f0bda694966d834}{get\+Event\+By\+Date}} (std\+::string date)
+\begin{DoxyCompactList}\small\item\em return the event of a certain date \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEvent}{Event}} $\ast$ \mbox{\hyperlink{classAssociation_af7345aeb4b38410261527c2f170ad707}{get\+Event\+By\+Date\+Phase}} (std\+::string date, int phase)
+\begin{DoxyCompactList}\small\item\em return the event of a certain date and phase \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAssociation_a1f50c2dd311479652c3c5bb17d3770dc}{sort\+Events}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em sorts all the events by their local, date and theme \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classAssociation_a92f8779f17716e9dcd206f63f888403c}{get\+Current\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current year. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classAssociation_a6d31c13ec77d54a1e814ae9528af694a}{get\+Current\+Semester}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classAssociation_a165477d8d99c99a659d2f193b39ba1f8}{name}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classAssociation}{Association}} name. \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{classAssociation_a891f18ca3dbbbdfa2e8fab54b1683133}{fund}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classAssociation}{Association}} initial fund to manage events,associates etc.. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAssociation_a19f8a7aad1491bc14f558b0b852da0a4}{annual\+Pay}}
+\begin{DoxyCompactList}\small\item\em The annual pay given by each and every associate. \end{DoxyCompactList}\item 
+std\+::set$<$ \mbox{\hyperlink{classAssociate}{Associate}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a3dad047d1eed00d6bc0bb371b30e3bd0}{associates\+\_\+set}}
+\begin{DoxyCompactList}\small\item\em Binary Tree with the Associates whose payments are considered up to date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Association_8h_a867982abd2e9432d5bed2574754bad3c}{Hash\+Tab\+Inactive\+Associate}} \mbox{\hyperlink{classAssociation_a13bdee38cb61374825f440c6015f1846}{inactive\+Associates}}
+\begin{DoxyCompactList}\small\item\em Hash Table with the Associates who haven\textquotesingle{}t payed for more than 5 years. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a6e0125297a1927aae76d14710fc02862}{areas}}
+\begin{DoxyCompactList}\small\item\em Vector of pointers to all the Scientific Areas from the \mbox{\hyperlink{classAssociation}{Association}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_aaf2b66c89b34895285a108658336df51}{events}}
+\begin{DoxyCompactList}\small\item\em Vector of pointers to all the events done by the Associates. \end{DoxyCompactList}\item 
+std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_a22ce7b1ee683ccc41ac9aa2864744349}{queue1}}
+\begin{DoxyCompactList}\small\item\em Priority queue of pointers to all the events done by the Associates in phase 1. \end{DoxyCompactList}\item 
+std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ \mbox{\hyperlink{classAssociation_ab67c6667f1fda8a6c97e7a7f2c79be2f}{queue2}}
+\begin{DoxyCompactList}\small\item\em Priority queue of pointers to all the events done by the Associates in phase 2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNetwork}{Network}} $\ast$ \mbox{\hyperlink{classAssociation_a6747cedd4ce14a3b890c8ac87f676192}{network}}
+\begin{DoxyCompactList}\small\item\em A pointer to the association network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classAssociation_a38c0785b12a067ee6c295a2d3ee453da}{current\+Year}} = 0.\+0
+\begin{DoxyCompactList}\small\item\em The current year. the integer part represents the year, the decimal part the semester. 0-\/$>$ 1º semester, 0.\+5-\/$>$2º semester. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classAssociation}{Association}} Class. 
+
+An \mbox{\hyperlink{classAssociation}{Association}} consists in a group of associates. It must have a name and a fund that is used to help promote event hosted by it\textquotesingle{}s associates. An \mbox{\hyperlink{classAssociation}{Association}} also has a group of Science Areas and each one of these has a Subarea. Each year, the associates must pay the \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s annual pay, which reverts to the fund. Finally, the \mbox{\hyperlink{classAssociation}{Association}} has a \mbox{\hyperlink{classNetwork}{Network}} used by it\textquotesingle{}s associates, in which they can send and receive emails. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAssociation_abf287524f5ab9abf66059e5fa959340b}\label{classAssociation_abf287524f5ab9abf66059e5fa959340b}} 
+\index{Association@{Association}!Association@{Association}}
+\index{Association@{Association}!Association@{Association}}
+\subsubsection{\texorpdfstring{Association()}{Association()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Association\+::\+Association (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{classAssociation_a0773254cf0a1377e144a39b36c99d74d}\label{classAssociation_a0773254cf0a1377e144a39b36c99d74d}} 
+\index{Association@{Association}!Association@{Association}}
+\index{Association@{Association}!Association@{Association}}
+\subsubsection{\texorpdfstring{Association()}{Association()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Association\+::\+Association (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+One Argument Constructor. 
+
+Initializes the \mbox{\hyperlink{classAssociation}{Association}} only with it\textquotesingle{}s name
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ the name of the \mbox{\hyperlink{classAssociation}{Association}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_aaf75146fc564138ae2ae2430eb7926a2}\label{classAssociation_aaf75146fc564138ae2ae2430eb7926a2}} 
+\index{Association@{Association}!Association@{Association}}
+\index{Association@{Association}!Association@{Association}}
+\subsubsection{\texorpdfstring{Association()}{Association()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Association\+::\+Association (\begin{DoxyParamCaption}\item[{std\+::string}]{file,  }\item[{\mbox{\hyperlink{classNetwork}{Network}} $\ast$}]{rede }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAssociation}{Association}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & -\/ a string from a file containing all the info in the following order\+: Name/ Fund/ annual\+Pay/ Current\+Year \\
+\hline
+{\em rede} & -\/ a pointer to the association\textquotesingle{}s network\\
+\hline
+\end{DoxyParams}
+It\textquotesingle{}s vector will be later on initialized \mbox{\Hypertarget{classAssociation_adc0ad6a21b904d08c1d392550df9da59}\label{classAssociation_adc0ad6a21b904d08c1d392550df9da59}} 
+\index{Association@{Association}!````~Association@{$\sim$\+Association}}
+\index{````~Association@{$\sim$\+Association}!Association@{Association}}
+\subsubsection{\texorpdfstring{$\sim$\+Association()}{~Association()}}
+{\footnotesize\ttfamily Association\+::$\sim$\+Association (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Default \mbox{\hyperlink{classAssociation}{Association}} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAssociation_a944406d8918729d1b9f0c7b5e34997d2}\label{classAssociation_a944406d8918729d1b9f0c7b5e34997d2}} 
+\index{Association@{Association}!accept\+Events@{accept\+Events}}
+\index{accept\+Events@{accept\+Events}!Association@{Association}}
+\subsubsection{\texorpdfstring{accept\+Events()}{acceptEvents()}}
+{\footnotesize\ttfamily void Association\+::accept\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the events that were proposed are accepted or not by the \mbox{\hyperlink{classAssociation}{Association}}. 
+
+\mbox{\Hypertarget{classAssociation_a33ebf26ce910d02ce8a702e4ff86551b}\label{classAssociation_a33ebf26ce910d02ce8a702e4ff86551b}} 
+\index{Association@{Association}!add\+Area@{add\+Area}}
+\index{add\+Area@{add\+Area}!Association@{Association}}
+\subsubsection{\texorpdfstring{add\+Area()}{addArea()}}
+{\footnotesize\ttfamily void Association\+::add\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArea}{Area}} $\ast$}]{new\+Area }\end{DoxyParamCaption})}
+
+
+
+Adds a new \mbox{\hyperlink{classArea}{Area}} to the association. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Area} & -\/ \mbox{\hyperlink{classArea}{Area}} pointer of the new \mbox{\hyperlink{classArea}{Area}} to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_ac77af0215fb992c31d4a048a00f642b9}\label{classAssociation_ac77af0215fb992c31d4a048a00f642b9}} 
+\index{Association@{Association}!add\+Associate@{add\+Associate}}
+\index{add\+Associate@{add\+Associate}!Association@{Association}}
+\subsubsection{\texorpdfstring{add\+Associate()}{addAssociate()}}
+{\footnotesize\ttfamily void Association\+::add\+Associate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAssociate}{Associate}} $\ast$}]{new\+Asso }\end{DoxyParamCaption})}
+
+
+
+Adds a new \mbox{\hyperlink{classAssociate}{Associate}} to the association. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Asso} & -\/ it\textquotesingle{}s a \mbox{\hyperlink{classAssociate}{Associate}} $\ast$, given the nature of the vector, a way to save space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a047b29b0d39da0695de0200ad495dee1}\label{classAssociation_a047b29b0d39da0695de0200ad495dee1}} 
+\index{Association@{Association}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!Association@{Association}}
+\subsubsection{\texorpdfstring{add\+Event()}{addEvent()}}
+{\footnotesize\ttfamily void Association\+::add\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEvent}{Event}} $\ast$}]{new\+Event }\end{DoxyParamCaption})}
+
+
+
+Adds a new event to the vector containing all the events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Event} & -\/ The event to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a48cf9a1d1e3d2e0e588cbbe7d2d5cd3b}\label{classAssociation_a48cf9a1d1e3d2e0e588cbbe7d2d5cd3b}} 
+\index{Association@{Association}!add\+To\+Fund@{add\+To\+Fund}}
+\index{add\+To\+Fund@{add\+To\+Fund}!Association@{Association}}
+\subsubsection{\texorpdfstring{add\+To\+Fund()}{addToFund()}}
+{\footnotesize\ttfamily void Association\+::add\+To\+Fund (\begin{DoxyParamCaption}\item[{float}]{income }\end{DoxyParamCaption})}
+
+
+
+Adds the money received from the annual payments to the \mbox{\hyperlink{classAssociation}{Association}} fund. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em income} & -\/ money received from the annual payments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_aa3bd82b207ae1ac0e44df1b481d4a8a1}\label{classAssociation_aa3bd82b207ae1ac0e44df1b481d4a8a1}} 
+\index{Association@{Association}!get\+Annual\+Pay@{get\+Annual\+Pay}}
+\index{get\+Annual\+Pay@{get\+Annual\+Pay}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Annual\+Pay()}{getAnnualPay()}}
+{\footnotesize\ttfamily float Association\+::get\+Annual\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the value of the annual pay for every associate. 
+
+\mbox{\Hypertarget{classAssociation_a46f83e00e0201f25129a5c8167969661}\label{classAssociation_a46f83e00e0201f25129a5c8167969661}} 
+\index{Association@{Association}!get\+Areas@{get\+Areas}}
+\index{get\+Areas@{get\+Areas}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Areas()}{getAreas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ Association\+::get\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the vector containing pointers to all the areas. 
+
+\mbox{\Hypertarget{classAssociation_a0c9670f1508da038f12e4ed11042189e}\label{classAssociation_a0c9670f1508da038f12e4ed11042189e}} 
+\index{Association@{Association}!get\+Asso\+By\+Id@{get\+Asso\+By\+Id}}
+\index{get\+Asso\+By\+Id@{get\+Asso\+By\+Id}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Asso\+By\+Id()}{getAssoById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAssociate}{Associate}} $\ast$ Association\+::get\+Asso\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to an \mbox{\hyperlink{classAssociate}{Associate}} with a certain ID. 
+
+Throws an exception, \mbox{\hyperlink{classNoSuchID}{No\+Such\+ID}}, if no \mbox{\hyperlink{classAssociate}{Associate}} has that ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & -\/ an integer representing the unique\+ID of each \mbox{\hyperlink{classAssociate}{Associate}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a7ef9441d3b0a176012f393453344fdf1}\label{classAssociation_a7ef9441d3b0a176012f393453344fdf1}} 
+\index{Association@{Association}!get\+Associates@{get\+Associates}}
+\index{get\+Associates@{get\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Associates()}{getAssociates()}}
+{\footnotesize\ttfamily set$<$ \mbox{\hyperlink{classAssociate}{Associate}} $\ast$ $>$ Association\+::get\+Associates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the set containing pointers to all the associates. 
+
+\mbox{\Hypertarget{classAssociation_a6d31c13ec77d54a1e814ae9528af694a}\label{classAssociation_a6d31c13ec77d54a1e814ae9528af694a}} 
+\index{Association@{Association}!get\+Current\+Semester@{get\+Current\+Semester}}
+\index{get\+Current\+Semester@{get\+Current\+Semester}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Current\+Semester()}{getCurrentSemester()}}
+{\footnotesize\ttfamily float Association\+::get\+Current\+Semester (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classAssociation_a92f8779f17716e9dcd206f63f888403c}\label{classAssociation_a92f8779f17716e9dcd206f63f888403c}} 
+\index{Association@{Association}!get\+Current\+Year@{get\+Current\+Year}}
+\index{get\+Current\+Year@{get\+Current\+Year}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Current\+Year()}{getCurrentYear()}}
+{\footnotesize\ttfamily int Association\+::get\+Current\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current year. 
+
+\mbox{\Hypertarget{classAssociation_af5a5354a9e84e8441f0bda694966d834}\label{classAssociation_af5a5354a9e84e8441f0bda694966d834}} 
+\index{Association@{Association}!get\+Event\+By\+Date@{get\+Event\+By\+Date}}
+\index{get\+Event\+By\+Date@{get\+Event\+By\+Date}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Event\+By\+Date()}{getEventByDate()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ Association\+::get\+Event\+By\+Date (\begin{DoxyParamCaption}\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+return the event of a certain date 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & -\/ The date of the event to be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_af7345aeb4b38410261527c2f170ad707}\label{classAssociation_af7345aeb4b38410261527c2f170ad707}} 
+\index{Association@{Association}!get\+Event\+By\+Date\+Phase@{get\+Event\+By\+Date\+Phase}}
+\index{get\+Event\+By\+Date\+Phase@{get\+Event\+By\+Date\+Phase}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Event\+By\+Date\+Phase()}{getEventByDatePhase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEvent}{Event}} $\ast$ Association\+::get\+Event\+By\+Date\+Phase (\begin{DoxyParamCaption}\item[{std\+::string}]{date,  }\item[{int}]{phase }\end{DoxyParamCaption})}
+
+
+
+return the event of a certain date and phase 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & -\/ The date of the event to be found \\
+\hline
+{\em phase} & -\/ The phase of the event to be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a3deb177639e3c8042f7400f336fdda08}\label{classAssociation_a3deb177639e3c8042f7400f336fdda08}} 
+\index{Association@{Association}!get\+Events@{get\+Events}}
+\index{get\+Events@{get\+Events}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Events()}{getEvents()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ Association\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a vector containing pointers to all the events that the \mbox{\hyperlink{classAssociation}{Association}} has. 
+
+\mbox{\Hypertarget{classAssociation_a4834d8fe0057ca4c55fa3e83bc47aae5}\label{classAssociation_a4834d8fe0057ca4c55fa3e83bc47aae5}} 
+\index{Association@{Association}!get\+Fund@{get\+Fund}}
+\index{get\+Fund@{get\+Fund}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Fund()}{getFund()}}
+{\footnotesize\ttfamily long double Association\+::get\+Fund (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the value of the monetary fund of the association. 
+
+\mbox{\Hypertarget{classAssociation_a8f80d4cad7e99335683d3de0b44a0a00}\label{classAssociation_a8f80d4cad7e99335683d3de0b44a0a00}} 
+\index{Association@{Association}!get\+Inactive\+Associates@{get\+Inactive\+Associates}}
+\index{get\+Inactive\+Associates@{get\+Inactive\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Inactive\+Associates()}{getInactiveAssociates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Association_8h_a867982abd2e9432d5bed2574754bad3c}{Hash\+Tab\+Inactive\+Associate}} Association\+::get\+Inactive\+Associates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the hashtable containing points to all the associates who haven\textquotesingle{}t paid in 5 years. 
+
+\mbox{\Hypertarget{classAssociation_ab9b849706f996d80ed3439d43d06a958}\label{classAssociation_ab9b849706f996d80ed3439d43d06a958}} 
+\index{Association@{Association}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Association\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the association. 
+
+\mbox{\Hypertarget{classAssociation_aa937fe1fcf8fb9f16a34ece38fef73d3}\label{classAssociation_aa937fe1fcf8fb9f16a34ece38fef73d3}} 
+\index{Association@{Association}!get\+Network@{get\+Network}}
+\index{get\+Network@{get\+Network}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Network()}{getNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNetwork}{Network}}$\ast$ Association\+::get\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the pointer to the association\textquotesingle{}s network. 
+
+\mbox{\Hypertarget{classAssociation_a595bd9c5abaf1ceaa62ac8fb70d359c6}\label{classAssociation_a595bd9c5abaf1ceaa62ac8fb70d359c6}} 
+\index{Association@{Association}!get\+Queue1@{get\+Queue1}}
+\index{get\+Queue1@{get\+Queue1}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Queue1()}{getQueue1()}}
+{\footnotesize\ttfamily priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ Association\+::get\+Queue1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the priority queue containing pointers to all the proposed Events to phase 1. 
+
+\mbox{\Hypertarget{classAssociation_a1600f284c97b98836cac69fc4b21d5f6}\label{classAssociation_a1600f284c97b98836cac69fc4b21d5f6}} 
+\index{Association@{Association}!get\+Queue2@{get\+Queue2}}
+\index{get\+Queue2@{get\+Queue2}!Association@{Association}}
+\subsubsection{\texorpdfstring{get\+Queue2()}{getQueue2()}}
+{\footnotesize\ttfamily priority\+\_\+queue$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$ $>$ Association\+::get\+Queue2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the priority queue containing pointers to all the proposed Events to phase 2. 
+
+\mbox{\Hypertarget{classAssociation_ae3c5683c5fb9d62f5bf2b9d38be3c8dc}\label{classAssociation_ae3c5683c5fb9d62f5bf2b9d38be3c8dc}} 
+\index{Association@{Association}!move\+Associates@{move\+Associates}}
+\index{move\+Associates@{move\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{move\+Associates()}{moveAssociates()}}
+{\footnotesize\ttfamily void Association\+::move\+Associates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAssociation_aaf6b3eabb3b20c31a56f69913cb3fdb3}\label{classAssociation_aaf6b3eabb3b20c31a56f69913cb3fdb3}} 
+\index{Association@{Association}!push\+To\+Queue@{push\+To\+Queue}}
+\index{push\+To\+Queue@{push\+To\+Queue}!Association@{Association}}
+\subsubsection{\texorpdfstring{push\+To\+Queue()}{pushToQueue()}}
+{\footnotesize\ttfamily void Association\+::push\+To\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEvent}{Event}} $\ast$}]{evento }\end{DoxyParamCaption})}
+
+
+
+Pushes an \mbox{\hyperlink{classEvent}{Event}} to the right queue according with the phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evento} & -\/ The \mbox{\hyperlink{classEvent}{Event}} to be pushed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_ab0f1b461051c5a7844e6ce490b7caea1}\label{classAssociation_ab0f1b461051c5a7844e6ce490b7caea1}} 
+\index{Association@{Association}!remove\+Associate@{remove\+Associate}}
+\index{remove\+Associate@{remove\+Associate}!Association@{Association}}
+\subsubsection{\texorpdfstring{remove\+Associate()}{removeAssociate()}}
+{\footnotesize\ttfamily void Association\+::remove\+Associate (\begin{DoxyParamCaption}\item[{int}]{unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{classAssociate}{Associate}} from the association (does not delete it, since it can exist out of the \mbox{\hyperlink{classAssociation}{Association}} scope) 
+
+If the unique\+ID is not attributed to one associate, throws a exception (\mbox{\hyperlink{classNoSuchID}{No\+Such\+ID}}); 
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a672445f247a9bab36b87e770f4b0f512}\label{classAssociation_a672445f247a9bab36b87e770f4b0f512}} 
+\index{Association@{Association}!remove\+Event@{remove\+Event}}
+\index{remove\+Event@{remove\+Event}!Association@{Association}}
+\subsubsection{\texorpdfstring{remove\+Event()}{removeEvent()}}
+{\footnotesize\ttfamily void Association\+::remove\+Event (\begin{DoxyParamCaption}\item[{std\+::string}]{date,  }\item[{int}]{phase }\end{DoxyParamCaption})}
+
+
+
+Removes an event in the vector containing all the events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & -\/ The date of the event to be removed \\
+\hline
+{\em phase} & -\/ The phase of the event to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a4279bd391a3110e4110d3f300b3423a3}\label{classAssociation_a4279bd391a3110e4110d3f300b3423a3}} 
+\index{Association@{Association}!set\+Annual\+Pay@{set\+Annual\+Pay}}
+\index{set\+Annual\+Pay@{set\+Annual\+Pay}!Association@{Association}}
+\subsubsection{\texorpdfstring{set\+Annual\+Pay()}{setAnnualPay()}}
+{\footnotesize\ttfamily void Association\+::set\+Annual\+Pay (\begin{DoxyParamCaption}\item[{float}]{annual\+Pay }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the annual pay for every associate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em annual\+Pay} & -\/ The new \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s annual pay \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a5611bc364e24e70f110332d1b2c63a08}\label{classAssociation_a5611bc364e24e70f110332d1b2c63a08}} 
+\index{Association@{Association}!set\+Events@{set\+Events}}
+\index{set\+Events@{set\+Events}!Association@{Association}}
+\subsubsection{\texorpdfstring{set\+Events()}{setEvents()}}
+{\footnotesize\ttfamily void Association\+::set\+Events (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEvent}{Event}} $\ast$$>$}]{all\+\_\+events }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the vector containing the pointers to the events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+\_\+events} & -\/ The new vector with all the \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s events \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_acbeba5c80457ba1c307c212bcad08b82}\label{classAssociation_acbeba5c80457ba1c307c212bcad08b82}} 
+\index{Association@{Association}!set\+Fund@{set\+Fund}}
+\index{set\+Fund@{set\+Fund}!Association@{Association}}
+\subsubsection{\texorpdfstring{set\+Fund()}{setFund()}}
+{\footnotesize\ttfamily void Association\+::set\+Fund (\begin{DoxyParamCaption}\item[{long double}]{fund }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the main\+Fund of the association. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fund} & -\/ The new \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s fund \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a8bd23fd6c727963237bf85a6374ab6d8}\label{classAssociation_a8bd23fd6c727963237bf85a6374ab6d8}} 
+\index{Association@{Association}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Association@{Association}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Association\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the name of the association. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ The new \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_afa9bdcebf905cddc52870dd156a14d54}\label{classAssociation_afa9bdcebf905cddc52870dd156a14d54}} 
+\index{Association@{Association}!set\+Net\+Work@{set\+Net\+Work}}
+\index{set\+Net\+Work@{set\+Net\+Work}!Association@{Association}}
+\subsubsection{\texorpdfstring{set\+Net\+Work()}{setNetWork()}}
+{\footnotesize\ttfamily void Association\+::set\+Net\+Work (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNetwork}{Network}} $\ast$}]{network }\end{DoxyParamCaption})}
+
+
+
+Sets/\+Changes the network of the association. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em network} & -\/ The new \mbox{\hyperlink{classAssociation}{Association}}\textquotesingle{}s network \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a266f2b14cd40429396b93ca29abcbf0c}\label{classAssociation_a266f2b14cd40429396b93ca29abcbf0c}} 
+\index{Association@{Association}!show\+All\+Associates@{show\+All\+Associates}}
+\index{show\+All\+Associates@{show\+All\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{show\+All\+Associates()}{showAllAssociates()}}
+{\footnotesize\ttfamily string Association\+::show\+All\+Associates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a string containing all the information about every associate in a readable and user-\/friendly way. 
+
+\mbox{\Hypertarget{classAssociation_a149a29d7d7b59d15dadd84a2289c87e4}\label{classAssociation_a149a29d7d7b59d15dadd84a2289c87e4}} 
+\index{Association@{Association}!show\+Areas@{show\+Areas}}
+\index{show\+Areas@{show\+Areas}!Association@{Association}}
+\subsubsection{\texorpdfstring{show\+Areas()}{showAreas()}}
+{\footnotesize\ttfamily string Association\+::show\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a string containing info about all the areas. 
+
+\mbox{\Hypertarget{classAssociation_aff3817596c302056ca73ca6a98e7bf3c}\label{classAssociation_aff3817596c302056ca73ca6a98e7bf3c}} 
+\index{Association@{Association}!show\+Events@{show\+Events}}
+\index{show\+Events@{show\+Events}!Association@{Association}}
+\subsubsection{\texorpdfstring{show\+Events()}{showEvents()}}
+{\footnotesize\ttfamily string Association\+::show\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns all the events. 
+
+\mbox{\Hypertarget{classAssociation_a7d743e480f5dbba9189a40d17b931121}\label{classAssociation_a7d743e480f5dbba9189a40d17b931121}} 
+\index{Association@{Association}!show\+Requests@{show\+Requests}}
+\index{show\+Requests@{show\+Requests}!Association@{Association}}
+\subsubsection{\texorpdfstring{show\+Requests()}{showRequests()}}
+{\footnotesize\ttfamily string Association\+::show\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a string containing info about the event request. 
+
+\mbox{\Hypertarget{classAssociation_a89d561169e68f61edd79cbef11bae683}\label{classAssociation_a89d561169e68f61edd79cbef11bae683}} 
+\index{Association@{Association}!sort\+Associates@{sort\+Associates}}
+\index{sort\+Associates@{sort\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{sort\+Associates()}{sortAssociates()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classAssociate}{Associate}} $\ast$ $>$ Association\+::sort\+Associates (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Sorts the associates by their name, id and wallet value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ receives a string with all the information of the associates \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_a1f50c2dd311479652c3c5bb17d3770dc}\label{classAssociation_a1f50c2dd311479652c3c5bb17d3770dc}} 
+\index{Association@{Association}!sort\+Events@{sort\+Events}}
+\index{sort\+Events@{sort\+Events}!Association@{Association}}
+\subsubsection{\texorpdfstring{sort\+Events()}{sortEvents()}}
+{\footnotesize\ttfamily void Association\+::sort\+Events (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+sorts all the events by their local, date and theme 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ String with all the information of the events \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAssociation_aafcd73622038c5174a70b1c03041810d}\label{classAssociation_aafcd73622038c5174a70b1c03041810d}} 
+\index{Association@{Association}!update\+All\+Associates@{update\+All\+Associates}}
+\index{update\+All\+Associates@{update\+All\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{update\+All\+Associates()}{updateAllAssociates()}}
+{\footnotesize\ttfamily void Association\+::update\+All\+Associates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the status from all associates to prevent ignoring new changes made to them. 
+
+\mbox{\Hypertarget{classAssociation_afd8dd744fba29817387841f4b6870c2d}\label{classAssociation_afd8dd744fba29817387841f4b6870c2d}} 
+\index{Association@{Association}!update\+Payment@{update\+Payment}}
+\index{update\+Payment@{update\+Payment}!Association@{Association}}
+\subsubsection{\texorpdfstring{update\+Payment()}{updatePayment()}}
+{\footnotesize\ttfamily string Association\+::update\+Payment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes the annual payment of every associate automatically. 
+
+\mbox{\Hypertarget{classAssociation_aa018edd1d345ca144f648096df9e9bf4}\label{classAssociation_aa018edd1d345ca144f648096df9e9bf4}} 
+\index{Association@{Association}!update\+Semester@{update\+Semester}}
+\index{update\+Semester@{update\+Semester}!Association@{Association}}
+\subsubsection{\texorpdfstring{update\+Semester()}{updateSemester()}}
+{\footnotesize\ttfamily void Association\+::update\+Semester (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the current year. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAssociation_a19f8a7aad1491bc14f558b0b852da0a4}\label{classAssociation_a19f8a7aad1491bc14f558b0b852da0a4}} 
+\index{Association@{Association}!annual\+Pay@{annual\+Pay}}
+\index{annual\+Pay@{annual\+Pay}!Association@{Association}}
+\subsubsection{\texorpdfstring{annual\+Pay}{annualPay}}
+{\footnotesize\ttfamily float Association\+::annual\+Pay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The annual pay given by each and every associate. 
+
+\mbox{\Hypertarget{classAssociation_a6e0125297a1927aae76d14710fc02862}\label{classAssociation_a6e0125297a1927aae76d14710fc02862}} 
+\index{Association@{Association}!areas@{areas}}
+\index{areas@{areas}!Association@{Association}}
+\subsubsection{\texorpdfstring{areas}{areas}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classArea}{Area}} $\ast$$>$ Association\+::areas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector of pointers to all the Scientific Areas from the \mbox{\hyperlink{classAssociation}{Association}}. 
+
+\mbox{\Hypertarget{classAssociation_a3dad047d1eed00d6bc0bb371b30e3bd0}\label{classAssociation_a3dad047d1eed00d6bc0bb371b30e3bd0}} 
+\index{Association@{Association}!associates\+\_\+set@{associates\+\_\+set}}
+\index{associates\+\_\+set@{associates\+\_\+set}!Association@{Association}}
+\subsubsection{\texorpdfstring{associates\+\_\+set}{associates\_set}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classAssociate}{Associate}} $\ast$$>$ Association\+::associates\+\_\+set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Binary Tree with the Associates whose payments are considered up to date. 
+
+\mbox{\Hypertarget{classAssociation_a38c0785b12a067ee6c295a2d3ee453da}\label{classAssociation_a38c0785b12a067ee6c295a2d3ee453da}} 
+\index{Association@{Association}!current\+Year@{current\+Year}}
+\index{current\+Year@{current\+Year}!Association@{Association}}
+\subsubsection{\texorpdfstring{current\+Year}{currentYear}}
+{\footnotesize\ttfamily float Association\+::current\+Year = 0.\+0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The current year. the integer part represents the year, the decimal part the semester. 0-\/$>$ 1º semester, 0.\+5-\/$>$2º semester. 
+
+\mbox{\Hypertarget{classAssociation_aaf2b66c89b34895285a108658336df51}\label{classAssociation_aaf2b66c89b34895285a108658336df51}} 
+\index{Association@{Association}!events@{events}}
+\index{events@{events}!Association@{Association}}
+\subsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEvent}{Event}} $\ast$$>$ Association\+::events\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector of pointers to all the events done by the Associates. 
+
+\mbox{\Hypertarget{classAssociation_a891f18ca3dbbbdfa2e8fab54b1683133}\label{classAssociation_a891f18ca3dbbbdfa2e8fab54b1683133}} 
+\index{Association@{Association}!fund@{fund}}
+\index{fund@{fund}!Association@{Association}}
+\subsubsection{\texorpdfstring{fund}{fund}}
+{\footnotesize\ttfamily long double Association\+::fund\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \mbox{\hyperlink{classAssociation}{Association}} initial fund to manage events,associates etc.. 
+
+\mbox{\Hypertarget{classAssociation_a13bdee38cb61374825f440c6015f1846}\label{classAssociation_a13bdee38cb61374825f440c6015f1846}} 
+\index{Association@{Association}!inactive\+Associates@{inactive\+Associates}}
+\index{inactive\+Associates@{inactive\+Associates}!Association@{Association}}
+\subsubsection{\texorpdfstring{inactive\+Associates}{inactiveAssociates}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Association_8h_a867982abd2e9432d5bed2574754bad3c}{Hash\+Tab\+Inactive\+Associate}} Association\+::inactive\+Associates\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash Table with the Associates who haven\textquotesingle{}t payed for more than 5 years. 
+
+\mbox{\Hypertarget{classAssociation_a165477d8d99c99a659d2f193b39ba1f8}\label{classAssociation_a165477d8d99c99a659d2f193b39ba1f8}} 
+\index{Association@{Association}!name@{name}}
+\index{name@{name}!Association@{Association}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Association\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \mbox{\hyperlink{classAssociation}{Association}} name. 
+
+\mbox{\Hypertarget{classAssociation_a6747cedd4ce14a3b890c8ac87f676192}\label{classAssociation_a6747cedd4ce14a3b890c8ac87f676192}} 
+\index{Association@{Association}!network@{network}}
+\index{network@{network}!Association@{Association}}
+\subsubsection{\texorpdfstring{network}{network}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNetwork}{Network}}$\ast$ Association\+::network\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A pointer to the association network. 
+
+\mbox{\Hypertarget{classAssociation_a22ce7b1ee683ccc41ac9aa2864744349}\label{classAssociation_a22ce7b1ee683ccc41ac9aa2864744349}} 
+\index{Association@{Association}!queue1@{queue1}}
+\index{queue1@{queue1}!Association@{Association}}
+\subsubsection{\texorpdfstring{queue1}{queue1}}
+{\footnotesize\ttfamily std\+::priority\+\_\+queue$<$\mbox{\hyperlink{classEvent}{Event}} $\ast$$>$ Association\+::queue1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priority queue of pointers to all the events done by the Associates in phase 1. 
+
+\mbox{\Hypertarget{classAssociation_ab67c6667f1fda8a6c97e7a7f2c79be2f}\label{classAssociation_ab67c6667f1fda8a6c97e7a7f2c79be2f}} 
+\index{Association@{Association}!queue2@{queue2}}
+\index{queue2@{queue2}!Association@{Association}}
+\subsubsection{\texorpdfstring{queue2}{queue2}}
+{\footnotesize\ttfamily std\+::priority\+\_\+queue$<$\mbox{\hyperlink{classEvent}{Event}} $\ast$$>$ Association\+::queue2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priority queue of pointers to all the events done by the Associates in phase 2. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Association_8h}{Association.\+h}}\item 
+\mbox{\hyperlink{Association_8cpp}{Association.\+cpp}}\end{DoxyCompactItemize}
